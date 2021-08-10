@@ -1,0 +1,131 @@
+.wrap {width: 100%; height: auto; position: relative;}
+.intro {width: 100%; height: 100vh; background:#f0f0f0; position: relative;}
+.intro>center{border-right: 1px solid;}
+.intro .text {position: absolute; top: 50%; transform: translateY(-50%); z-index: 1;}
+.intro .text h2 {font-size: 150px; letter-spacing: -5px; line-height: 120%; margin-bottom: 20px; position: relative; animation: fadein 1.5s 1 forwards}
+.intro .text b {font-size: 30px; position: relative; animation: fadein 1.5s 1 forwards; animation-delay: 0.5s; opacity: 0;}
+@keyframes fadein {
+  0%{top: 400px; opacity: 0;}
+  100%{top: 0; opacity: 1;}
+}
+
+.fade-in {animation-name: Main-fadeIn; animation-iteration-count:1; animation-duration: 1.5s; animation-timing-function: ease-out; animation-fill-mode: forwards;}
+
+.sub-fade-in {animation-name: Main-fadeIn; animation-iteration-count:1; animation-delay: 0.5s; animation-duration: 1.5s; animation-timing-function: ease-out; animation-fill-mode: forwards;}
+
+@keyframes Main-fadeIn {
+  0% {
+    margin-top: 200px;
+    opacity : 0;
+  }
+  100%{
+    margin: 0;
+    opacity : 1;
+  }
+}
+
+
+.intro .intro-img {width: 20%; _height: 600px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);}
+.intro .intro-img img {width: 100%;}
+.intro .infinity-img {position: absolute; bottom: 5%; right: 13%; width: 7%;}
+.intro .infinity-img .line {position: absolute; width: 2px; height: 500%; background: #777; bottom: 50%; right: 50%; transform: translateX(-50%);}
+.intro .infinity-img .line.active {animation: line-active 1s 1 forwards;}
+.intro .infinity-img img{width: 100%; animation: rotate_image 10s linear infinite; transform-origin: 50% 50%;}
+
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes line-active {
+  0%{height: 500%;}
+  100%{height: 0;}
+}
+
+header{width: 100%; padding: 30px 0; position: absolute; top: 0; left: 0;}
+header .grid {display: flex; justify-content: space-between; align-items: center;}
+header .logo{width: 5%;}
+header .logo img{width: 100%;}
+
+header .nav {display: flex; width: 50%; justify-content: space-between; align-items: center;}
+.fixed-nav {width: 100%; padding: 15px 0; position: fixed; background-color:rgba(255,255,255,0.8); box-shadow: 0 3px 7px rgba(0, 0, 0, 10%); z-index:99;}
+
+header .menu-icon {font-size: 16px;}
+
+/* About me Section Style Code */
+section {width: 100%; height: auto;}
+.aboutme {width: 100%;}
+.aboutme>.center{display: flex;}
+.aboutme-left {width: 50%; border-right: 1px solid #ccc; padding: 20px 40px; opacity: 0;}
+.title-text h3 {font-size: 30px;}
+.title-text p {font-size: 16px; padding: 10px 0;}
+.aboutme-left .aboutme-img {width: 60%; transform:translateX(60%); margin-top: 10%;}
+.aboutme-left .aboutme-img img{width: 100%;}
+
+.aboutme-right {width: 50%; padding: 20px 40px; opacity: 0;}
+.aboutme-right .skills {display: flex; justify-content: space-between; margin: 50px 0;}
+.aboutme-right .skills .skills-img {width: 10%; margin-left: 10px;}
+.aboutme-right .skills .skills-img img {width: 100%;}
+.aboutme-right .skills .skills-text {width: 80%;}
+.aboutme-right .skills .skills-text p {font-size: 18px; font-weight: 600; margin-bottom: 10px;}
+.aboutme-right .skills .bar {width: 100%; height: 25px; border-radius: 15px; background: #e44d26; position: relative; overflow: hidden;}
+.aboutme-right .skills .bar b {position: absolute; right: 30px; color: #fff; top: 50%; transform: translateY(-50%); font-size: 13px; font-weight: 300;}
+.inner-bar {width:0%; height: 25px; border-radius: 15px; position: absolute; background: #fa8452;}
+
+/* Portfolio Section Style Code */
+.pf {position: relative;}
+.pf .bg {background: url(../img/portfolio_bg.png) no-repeat center center; background-size: cover; width: 100%; height: 90%; position: absolute; z-index: -1;}
+.pf-center {height: 100%; display: flex; justify-content: center; align-items: center;}
+
+
+.pf-box {
+  _display: flex;
+  _flex-wrap: nowrap;
+  width: 70%;
+  overflow: auto;
+  cursor: pointer;
+  white-space: nowrap;
+  /* Hiddem scroll bar */
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.pf-box::-webkit-scrollbar {height: 3px; border-radius: 3px;}
+.pf-box::-webkit-scrollbar-thumb {background: #C6DFD6;}
+.pf-box::-webkit-scrollbar-track {background: #EDECEA;}
+
+/* .pf-box {width: 400%; position: relative; margin: 50px 0; display: flex;} */
+.pf-box .each-pf-box {
+  display: inline-block;
+  background-color: white;
+}
+.each-pf-box .pf-imgbox {width: 70%; height: 600px; overflow: hidden; box-shadow:28px 4px 33px -15px rgba(191,191,191,0.53); float:left;}
+/* .each-pf-box .pf-imgbox .pfimg {background: url(../img/pf_01.jpg) no-repeat center center; background-size: cover; width: 100%; height: 100%;} */
+.each-pf-box .pf-imgbox .pfimg {margin:auto; height:100%; overflow:hidden; position: relative;}
+.each-pf-box .pf-imgbox .pfimg img{height:100%;}
+.each-pf-box .pf-imgbox .pfimg .scale {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); opacity:0; visibility: hidden;}
+.each-pf-box .pf-imgbox .pfimg:hover .scale {opacity: 1; visibility: visible;}
+.each-pf-box .pf-imgbox .pfimg:hover img {animation: scale 1s 1 forwards; animation-delay: 0.2s;}
+/* .each-pf-box .pf-imgbox .pfimg img:hover {} */
+
+@keyframes scale{
+  0%{transform: scale(1);}
+  100%{transform: scale(1.2);}
+}
+
+.each-pf-box .pf-txtbox {padding: 0 0 0 40px; transform: translate(-30%, 120%); float:right;}
+.each-pf-box .pf-txtbox b{font-size: 30px;}
+.each-pf-box .pf-txtbox p {font-size: 16px; padding: 10px 0;}
+.each-pf-box .pf-txtbox span {font-weight: 300; padding-top: 10px; display: block;}
+.each-pf-box .pf-txtbox .first {margin-top: 10px;}
+.each-pf-box .pf-txtbox button,
+.each-pf-box .pf-txtbox a {padding: 15px 20px; margin-top: 20px; display: inline-block; border: 1px solid #222; margin-right: 10px; transition: all; background: #fff;}
+.each-pf-box .pf-txtbox button:hover,
+.each-pf-box .pf-txtbox a:hover {border: 1px solid #C6DFD6; color: #C6DFD6;}
+
+/* Portfolio Section : Modal Style Code */
+.modal {display: none; position: fixed; z-index: 10; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.7);}
+.modal .modal-box {width: 1280px; height: 80%; position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); background: #fff;}
+.modal .modal-box .modal-con {width: 100%; height: 100%; overflow-y: scroll;}
+.modal .modal-box .modal-con img {width: 100%;}
