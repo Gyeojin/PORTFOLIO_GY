@@ -84,7 +84,7 @@ section {width: 100%; height: auto;}
 .pf-box {
   _display: flex;
   _flex-wrap: nowrap;
-  width: 70%;
+  width: 80%;
   overflow: auto;
   cursor: pointer;
   white-space: nowrap;
@@ -105,16 +105,14 @@ section {width: 100%; height: auto;}
 .each-pf-box .pf-imgbox {width: 70%; height: 600px; overflow: hidden; box-shadow:28px 4px 33px -15px rgba(191,191,191,0.53); float:left;}
 /* .each-pf-box .pf-imgbox .pfimg {background: url(../img/pf_01.jpg) no-repeat center center; background-size: cover; width: 100%; height: 100%;} */
 .each-pf-box .pf-imgbox .pfimg {margin:auto; height:100%; overflow:hidden; position: relative;}
-.each-pf-box .pf-imgbox .pfimg img{height:100%;}
-.each-pf-box .pf-imgbox .pfimg .scale {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); opacity:0; visibility: hidden;}
-.each-pf-box .pf-imgbox .pfimg:hover .scale {opacity: 1; visibility: visible;}
+.each-pf-box .pf-imgbox .pfimg img{height:100%; transition: all 0.6s;}
+.each-pf-box .pf-imgbox .pfimg:hover img {transform: scale(1.1);}
+.each-pf-box .pf-imgbox .pfimg .overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); opacity:0; transition: all 0.6s;}
+.each-pf-box .pf-imgbox .pfimg:hover .overlay {opacity: 1;}
 .each-pf-box .pf-imgbox .pfimg:hover img {animation: scale 1s 1 forwards; animation-delay: 0.2s;}
 /* .each-pf-box .pf-imgbox .pfimg img:hover {} */
 
-@keyframes scale{
-  0%{transform: scale(1);}
-  100%{transform: scale(1.2);}
-}
+
 
 .each-pf-box .pf-txtbox {transform: translate(-10%, 120%); float:right;}
 .each-pf-box .pf-txtbox b{font-size: 30px;}

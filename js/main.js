@@ -3,6 +3,8 @@ function fixNav() {
   const line = document.querySelector('.line');
   const aboutLeft = document.querySelector('.aboutme-left');
   const aboutRight = document.querySelector('.aboutme-right');
+  const pf = document.querySelector('.pf');
+  const ds = document.querySelector('.design');
 
   //console.log(aboutBar);
   const nav1 = window.pageYOffset; //스크롤값 알려줌
@@ -37,7 +39,19 @@ function fixNav() {
       let rateNum = $(".bar").eq(i).find("b").attr("value");
       $(".bar").eq(i).find(".inner-bar").delay(1500).animate({width:rateNum+"%"}, 1500);
     }
-  } 
+  }
+
+  if (nav1 >= 920) {
+    pf.classList.add('fade-in');
+  } else {
+    return;
+  }
+  
+  if (nav1 >= 1929) {
+    ds.classList.add('fade-in');
+  } else {
+    return;
+  }
 }
 window.addEventListener('scroll', fixNav);
 
