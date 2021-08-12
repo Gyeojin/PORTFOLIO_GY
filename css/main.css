@@ -46,7 +46,7 @@
 
 header{width: 100%; padding: 30px 0; position: absolute; top: 0; left: 0;}
 header .grid {display: flex; justify-content: space-between; align-items: center;}
-header .logo{width: 100px;}
+header .logo{width: 80px;}
 header .logo img{width: 100%;}
 
 header .nav {display: flex; width: 50%; justify-content: space-between; align-items: center;}
@@ -120,7 +120,7 @@ section {width: 100%; height: auto;}
 .each-pf-box .pf-txtbox span {font-weight: 300; padding-top: 10px; display: block;}
 .each-pf-box .pf-txtbox .first {margin-top: 10px;}
 .each-pf-box .pf-txtbox button,
-.each-pf-box .pf-txtbox a {padding: 15px 20px; margin-top: 20px; display: inline-block; border: 1px solid #222; margin-right: 10px; transition: all; background: #fff;}
+.each-pf-box .pf-txtbox a{padding: 15px 20px; margin-top: 20px; display: inline-block; border: 1px solid #222; margin-right: 10px; transition: all; background: #fff;}
 .each-pf-box .pf-txtbox button:hover,
 .each-pf-box .pf-txtbox a:hover {border: 1px solid #C6DFD6; color: #C6DFD6;}
 
@@ -129,3 +129,45 @@ section {width: 100%; height: auto;}
 .modal .modal-box {width: 1280px; height: 80%; position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); background: #fff;}
 .modal .modal-box .modal-con {width: 100%; height: 100%; overflow-y: scroll;}
 .modal .modal-box .modal-con img {width: 100%;}
+
+.design-box {width: 100%; display: flex; justify-content: space-between; padding-top: 40px;}
+.design-eachbox {width: calc(33.33% - 20px); box-shadow: 0px 0px 16px 1px rgba(155,155,155,0.3);}
+.design-img {width: 100%; height: 400px; margin: auto; overflow: hidden;}
+.design-img img {width: 100%;}
+.design-txtbox {padding: 30px 20px; text-align: center;}
+.design-txtbox b{font-size: 24px;}
+.design-txtbox p{font-size: 16px; padding: 10px 0 20px 0;}
+.design-txtbox a {padding: 15px 20px; display: inline-block; border: 1px solid #222; transition: all; background: #fff;}
+.design-txtbox a:hover {border: 1px solid #C6DFD6; color: #C6DFD6;}
+
+/* Recieved Section Style Code */
+#recieved {padding: 50px; border-bottom: 1px solid #c6dfd6;}
+#recieved .msg-table{width: 100%; height: auto; margin-bottom: 20px;}
+#recieved .msg-table li{display: flex; text-align: center; padding: 10px 0; border-bottom: 1px solid #f3f3f3; font-size: 14px; color: #333;}
+#recieved .msg-table .msg-title{background: #c6dfd6;}
+#recieved .msg-table .msg-title span{color: #fff;}
+
+#recieved .msg-table li span:nth-child(1){width: 15%;}
+#recieved .msg-table li span:nth-child(2){width: 20%;}
+#recieved .msg-table li span:nth-child(3){width: 45%;}
+#recieved .msg-table li span:nth-child(4){width: 20%;}
+
+#recieved .msg-table .msg-con span:nth-child(3){text-align: left;}
+
+/* Contact Me Section Style Code */
+#contact .title-text {text-align: center;}
+#contact .title-text h3 {font-size: 50px;}
+#contact .form-area{width: 100; height: auto; padding: 50px 50px 30px 50px; border-radius: 20px;}
+#contact .form-area p{margin-bottom: 10px;}
+#contact .form-area .name-email{width: 100%; height: auto; display: flex; justify-content: space-between;}
+#contact .form-area .name-email input{width: calc(50% - 5px); padding: 10px; border: 1px solid #edecea;}
+#contact .form-area .name-email input:focus{border: 1px solid #c6dfd6;}
+#contact .form-area .subject {width: 100%; height: auto;}
+#contact .form-area .subject input {padding: 10px; width: 100%; border: 1px solid #edecea;}
+#contact .form-area .subject input:focus{border: 1px solid #c6dfd6;}
+#contact .form-area .message {width: 100%; height: auto;}
+#contact .form-area .message textarea{width: 100%; height: 200px; padding: 10px; font-family: 'Open-Sans'; border: 1px solid #edecea;}
+#contact .form-area .message textarea:focus{border: 1px solid #c6dfd6;}
+
+#contact .form-area .send-btn{width: 100%; height: auto; display: flex; justify-content: center;}
+#contact .form-area .send-btn button{border: 0; color: #fff; font-weight: 600; padding: 10px 30px; background: #c6dfd6; cursor: pointer;}

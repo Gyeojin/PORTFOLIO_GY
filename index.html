@@ -209,9 +209,124 @@
       <div class="center">
         <div class="title-text">
           <h3>Design.</h3>
-          <p>이것저것 그리고, 연출했어요.</p>
+          <p>이것저것 그려보고, 기획했어요.</p>
         </div>
-        
+        <div class="design-box">
+          <div class="design-eachbox">
+            <div class="design-img">
+              <img src="/portfolio_GY/img/ex.jpg" alt="">
+            </div>
+            <div class="design-txtbox">
+              <b>aaaaa</b>
+              <p>어쩌구저쩌구 설명</p>
+              <a href="#">DETAIL</a>
+            </div>
+          </div>
+          <div class="design-eachbox">
+            <div class="design-img">
+              <img src="/portfolio_GY/img/slide_03.jpg" alt="">
+            </div>
+            <div class="design-txtbox">
+              <b>aaaaa</b>
+              <p>어쩌구저쩌구 설명</p>
+              <a href="#">DETAIL</a>
+            </div>
+          </div>
+          <div class="design-eachbox">
+            <div class="design-img">
+              <img src="/portfolio_GY/img/slide_04.jpg" alt="">
+            </div>
+            <div class="design-txtbox">
+              <b>aaaaa</b>
+              <p>어쩌구저쩌구 설명</p>
+              <a href="#">DETAIL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="center">
+        <div class="title-text">
+          <h3>Contact Me.</h3>
+          <p>이 곳에 메모를 남겨주시면, 빠른 시일 안에 연락드리겠습니다.</p>
+        </div>
+        <div id="recieved" class="recieved">
+          <ul class="msg-table">
+            <li class="msg-title">
+              <span>글쓴이</span>
+              <span>이메일</span>
+              <span>제목</span>
+              <span>등록일</span>
+            </li>
+            <!-- <?php
+              include_once $_SERVER['DOCUMENT_ROOT']."/reveal/php/connect.php"; //$db_conn
+              $sql = "SELECT * FROM re_message ORDER BY RE_idx DESC"; //re_message 테이블(FROM re_message)을 선택(SELECT)해서 데이터를 RE_idx 순번(ORDER BY RE_idx)의 역순(DESC)으로 보여준다
+  
+              $msg_result = mysqli_query($db_conn, $sql);
+              //var_dump($msg_result);
+              
+              while($row=mysqli_fetch_array($msg_result)){
+                $name = $row['RE_name'];
+                $email = $row['RE_email'];
+                $subject = $row['RE_subject'];
+                $regist = $row['RE_reg'];
+  
+                //echo $name;
+            ?> -->
+            <li class="msg-con">
+              <span>이름</span>
+              <span>이메일</span>
+              <span>내용</span>
+              <span>2021-08-12</span>
+            </li>
+            <li class="msg-con">
+              <span>고여진</span>
+              <span>gohyeojin@gmail.com</span>
+              <span>우왕</span>
+              <span>2021/05/25</span>
+            </li>
+            <li class="msg-con">
+              <span>고여진</span>
+              <span>gohyeojin@gmail.com</span>
+              <span>우왕</span>
+              <span>2021/05/25</span>
+            </li>
+            <!-- <?php
+              }
+            ?> -->
+            <!-- <li class="msg-con">
+              <span>고여진</span>
+              <span>gohyeojin@gmail.com</span>
+              <span>우왕</span>
+              <span>2021/05/25</span>
+            </li>
+            <li class="msg-con">
+              <span>고여진</span>
+              <span>gohyeojin@gmail.com</span>
+              <span>우왕</span>
+              <span>2021/05/25</span>
+            </li> -->
+          </ul>
+        </div>
+        <div class="form-area">
+          <form action="/portfolio_GY/php/insert_msg.php" method="post" name="form_data">
+            <p class="name-email">
+              <!-- input : 사용자가 텍스트박스 안에 직접 작성할 수 있는 태그 -->
+              <input type="text" name="name" placeholder="성함">
+              <input type="text" name="email" placeholder="E-mail">
+            </p>
+            <p class="subject">
+              <input type="text" name="subject" placeholder="제목을 입력해 주세요.">
+            </p>
+            <p class="message">
+              <textarea name="message" placeholder="내용을 입력해 주세요."></textarea>
+              <p class="send-btn">
+                <button>SEND MESSAGE</button>
+              </p>
+            </p>
+          </form>
+        </div>
       </div>
     </section>
   </div>
