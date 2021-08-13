@@ -1,56 +1,8 @@
 $(function(){
 
-  // $(".pfimg").mouseenter(function(){
-  //   //alert("abv");
-  //   $(this).find("img").animate({'transform': 'scale(1.2)'},1200)
-  //   //$(".pfimg img").animate({'transform': 'scale(1.2)'},1200);
-  //   $(".scale").animate({display: 'block'},1200);
+  // $('#openModal').click(function(){
+  //   $(this)
   // });
-
-  // $(".pfimg").mouseleave(function(){
-  //   $(".pfimg img").animate({transform: 'scale(1)'},1200)
-  //   $(".scale").animate({display: 'none'},1200)
-  // });
-
-
-  // // 스크롤 제한 ON
-  // $(".pf .center").mouseover(function(){
-  //   $('body').on('mousewheel', function(e) {
-  //     e.preventDefault();
-  //     e.stopPropagation();
-  //     return false;
-  //   });
-  // });
-
-  // $(".pf .center").mouseout(function(){
-  //   $('body').off('mousewheel');
-  // });
-
-
-//   $(".pf-center").on('mousewheel',function(e){
-
-//     var wheelDelta = e.originalEvent.wheelDelta;
-    
-  
-//     if(wheelDelta > 0){
-  
-//       //console.log("up");
-  
-//       $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
-  
-//     }else{
-      
-    
-//     console.log("down");
-  
-//       $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
-  
-//     }
-  
-//   });
-// });
-
-
 
 // //section위에서 마우스 휠을 움직이면
 // $("section").on("mousewheel",function(event,delta){    

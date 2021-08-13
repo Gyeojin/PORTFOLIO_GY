@@ -8,7 +8,7 @@ function fixNav() {
 
   //console.log(aboutBar);
   const nav1 = window.pageYOffset; //스크롤값 알려줌
-  console.log(nav1);
+  //console.log(nav1);
 
   if (nav1 > 0) {
     nav.classList.add('fixed-nav'); 
@@ -101,15 +101,25 @@ mouseWheel.addEventListener('wheel', function(e) {
 
 
 
-const openModal = document.querySelector('#openModal');
-const Modal = document.querySelector('#pf-Modal');
 
-openModal.onclick = function(){
-  Modal.style.display = "block";
-}
+const openModal = document.querySelectorAll('#openModal');
+//console.log(openModal);
+const Modal = document.querySelectorAll('#pf-Modal');
+//console.log(Modal);
 
-window.onclick = function(event){
-  if(event.target == Modal){
-    Modal.style.display = "none";
+for(let i=0; i < openModal.length; i++){
+  openModal[i].onclick = function(){
+    Modal[i].style.display = "block";
+    window.onclick = function(event){
+      if(event.target == Modal[i]){
+        Modal[i].style.display = "none";
+      }
+    }
   }
 }
+
+
+// openModal.onclick = function(){
+//   Modal.style.display = "block";
+// }
+

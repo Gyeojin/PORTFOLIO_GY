@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- RESET, MAIN Style CSS code -->
-  <link rel="stylesheet" href="../portfolio_GY/css/reset.css">
-  <link rel="stylesheet" href="../portfolio_GY/css/main.css">
-  <link rel="stylesheet" href="../portfolio_GY/css/media.css">
+  <link rel="stylesheet" href="/portfolio_GY/css/reset.css">
+  <link rel="stylesheet" href="/portfolio_GY/css/main.css">
+  <link rel="stylesheet" href="/portfolio_GY/css/media.css">
     
 </head>
 <body>
@@ -193,7 +193,40 @@
           </div>
         </div>
       </div>
-      <div id="pf-Modal" class="modal">
+      <div id="pf-Modal" class="modal1">
+        <div class="modal-box">
+          <div class="modal-con">
+            <img src="../portfolio_GY/img/pf-content.jpg" alt="">
+            <div class="close" id="close">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pf-Modal" class="modal2">
+        <div class="modal-box">
+          <div class="modal-con">
+            <img src="../portfolio_GY/img/pf-content.jpg" alt="">
+            <div class="close" id="close">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pf-Modal" class="modal3">
+        <div class="modal-box">
+          <div class="modal-con">
+            <img src="../portfolio_GY/img/pf-content.jpg" alt="">
+            <div class="close" id="close">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pf-Modal" class="modal4">
         <div class="modal-box">
           <div class="modal-con">
             <img src="../portfolio_GY/img/pf-content.jpg" alt="">
@@ -259,70 +292,49 @@
               <span>제목</span>
               <span>등록일</span>
             </li>
-            <!-- <?php
-              include_once $_SERVER['DOCUMENT_ROOT']."/reveal/php/connect.php"; //$db_conn
-              $sql = "SELECT * FROM re_message ORDER BY RE_idx DESC"; //re_message 테이블(FROM re_message)을 선택(SELECT)해서 데이터를 RE_idx 순번(ORDER BY RE_idx)의 역순(DESC)으로 보여준다
+            <?php
+              include $_SERVER["DOCUMENT_ROOT"]."/connect/db_conn.php";
+              $sql = "SELECT * FROM pf_msg ORDER BY pf_msg_idx DESC"; //re_message 테이블(FROM re_message)을 선택(SELECT)해서 데이터를 RE_idx 순번(ORDER BY RE_idx)의 역순(DESC)으로 보여준다
   
-              $msg_result = mysqli_query($db_conn, $sql);
-              //var_dump($msg_result);
+              $msg_result = mysqli_query($dbConn, $sql);
+              //echo $msg_result;
               
-              while($row=mysqli_fetch_array($msg_result)){
-                $name = $row['RE_name'];
-                $email = $row['RE_email'];
-                $subject = $row['RE_subject'];
-                $regist = $row['RE_reg'];
+              while($msg_result_row=mysqli_fetch_array($msg_result)){
+                $pf_name = $msg_result_row['pf_msg_id'];
+                $pf_pass = $msg_result_row['pf_msg_pass'];
+                $pf_email = $msg_result_row['pf_msg_email'];
+                $pf_tit = $msg_result_row['pf_msg_tit'];
+                $pf_desc = $msg_result_row['pf_msg_desc'];
+                $pf_reg = $msg_result_row['pf_msg_reg'];
   
                 //echo $name;
-            ?> -->
+            ?>
             <li class="msg-con">
-              <span>이름</span>
-              <span>이메일</span>
-              <span>내용</span>
-              <span>2021-08-12</span>
+              <span><?=$pf_name?></span>
+              <span><?=$pf_email?></span>
+              <span><?=$pf_tit?></span>
+              <span><?=$pf_reg?></span>
             </li>
-            <li class="msg-con">
-              <span>고여진</span>
-              <span>gohyeojin@gmail.com</span>
-              <span>우왕</span>
-              <span>2021/05/25</span>
-            </li>
-            <li class="msg-con">
-              <span>고여진</span>
-              <span>gohyeojin@gmail.com</span>
-              <span>우왕</span>
-              <span>2021/05/25</span>
-            </li>
-            <!-- <?php
+            <?php
               }
-            ?> -->
-            <!-- <li class="msg-con">
-              <span>고여진</span>
-              <span>gohyeojin@gmail.com</span>
-              <span>우왕</span>
-              <span>2021/05/25</span>
-            </li>
-            <li class="msg-con">
-              <span>고여진</span>
-              <span>gohyeojin@gmail.com</span>
-              <span>우왕</span>
-              <span>2021/05/25</span>
-            </li> -->
+            ?>
           </ul>
         </div>
         <div class="form-area">
-          <form action="/portfolio_GY/php/insert_msg.php" method="post" name="form_data">
+          <form action="/portfolio_GY/php/insert_msg.php" method="post" name="pf_msg_form">
             <p class="name-email">
               <!-- input : 사용자가 텍스트박스 안에 직접 작성할 수 있는 태그 -->
-              <input type="text" name="name" placeholder="성함">
-              <input type="text" name="email" placeholder="E-mail">
+              <input type="text" name="pf_id" placeholder="성함">
+              <input type="text" name="pf_email" placeholder="E-mail">
+              <input type="password" name="pf_pass" placeholder="비밀번호">
             </p>
             <p class="subject">
-              <input type="text" name="subject" placeholder="제목을 입력해 주세요.">
+              <input type="text" name="pf_tit" placeholder="제목을 입력해 주세요.">
             </p>
             <p class="message">
-              <textarea name="message" placeholder="내용을 입력해 주세요."></textarea>
+              <textarea name="pf_desc" placeholder="내용을 입력해 주세요."></textarea>
               <p class="send-btn">
-                <button>SEND MESSAGE</button>
+                <button type="button">SEND MESSAGE</button>
               </p>
             </p>
           </form>
@@ -340,5 +352,39 @@
   <script type='text/javascript' src='../portfolio_GY/lib/jquery.mousewheel.min.js'></script> -->
   <script src="../portfolio_GY/js/main.js"></script>
   <script src="../portfolio_GY/js/jq.js"></script>
+  <script>
+    const submitBtn = document.querySelector('.send-btn button');
+    
+    submitBtn.addEventListener('click',function(){
+      if(!document.pf_msg_form.pf_id.value){
+        alert('성함을 입력해 주세요.');
+        document.pf_msg_form.pf_id.focus();
+        return;
+      }
+      if(!document.pf_msg_form.pf_email.value){
+        alert('연락 받으실 이메일을 입력해 주세요.');
+        document.pf_msg_form.pf_email.focus();
+        return;
+      }
+      if(!document.pf_msg_form.pf_pass.value){
+        alert('글 열람 비밀번호를 입력해 주세요.');
+        document.pf_msg_form.pf_pass.focus();
+        return;
+      }
+      if(!document.pf_msg_form.pf_tit.value){
+        alert('글 제목을 입력해 주세요.');
+        document.pf_msg_form.pf_tit.focus();
+        return;
+      }
+      if(!document.pf_msg_form.pf_desc.value){
+        alert('글 내용을 입력해 주세요.');
+        document.pf_msg_form.pf_desc.focus();
+        return;
+      }
+      document.pf_msg_form.submit();
+    });
+
+  </script>
+
 </body>
 </html>
