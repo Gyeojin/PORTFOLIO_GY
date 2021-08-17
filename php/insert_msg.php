@@ -11,6 +11,7 @@
 
   $sql = "INSERT INTO pf_msg (pf_msg_id,pf_msg_pass,pf_msg_email,pf_msg_tit,pf_msg_desc,pf_msg_reg) VALUES ('{$pf_id}','{$pf_pass}','{$pf_email}','{$pf_tit}','{$pf_desc}','{$pf_reg}')";
 
+
   mysqli_query ($dbConn, $sql);
 
   echo "

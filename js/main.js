@@ -55,18 +55,40 @@ function fixNav() {
 }
 window.addEventListener('scroll', fixNav);
 
+//console.log($(".nav li button"));
+
+var activeHeader = function(){
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+  
+    for (var i = 0; i < $("section").length; i++) {
+      var secTop = $("section").eq(i).offset().top;
+      var secBtm = secTop + $("section").eq(i).outerHeight();
+
+      if (scroll >= secTop - 1 && scroll < secBtm - 1) {
+        $(".nav li button").eq(i).addClass("nav-color");
+      } else {
+        $(".nav li button").eq(i).removeClass("nav-color");
+      }
+    }
+  });
+}
+activeHeader();
 
 const navButton = document.querySelectorAll('.nav button');
-//console.log(navButton);
+console.log(navButton);
+
 const home = document.querySelector('.intro');
 const aboutMe = document.querySelector('.about');
 const portFolio = document.querySelector('.pf');
 const design = document.querySelector('.design');
+const contact = document.querySelector('#contact');
 
 const homeTop = home.offsetTop;
 const aboutMeTop = aboutMe.offsetTop;
 const portFolioTop = portFolio.offsetTop;
 const designTop = design.offsetTop;
+const contactTop = contact.offsetTop;
 
 navButton[0].onclick = function(){
   window.scroll({top:homeTop, behavior: 'smooth'})
@@ -84,11 +106,15 @@ navButton[3].onclick = function(){
   window.scroll({top:designTop, behavior: 'smooth'})
 }
 
+navButton[4].onclick = function(){
+  window.scroll({top:contactTop, behavior: 'smooth'})
+}
+
 
 const mouseWheel = document.querySelector('.pf-box');
 const pfBox = document.querySelector('.each-pf-box');
 var pfWidth = pfBox.offsetWidth;
-console.log(pfWidth);
+//console.log(pfWidth);
 
 mouseWheel.addEventListener('wheel', function(e) {
     const race = pfWidth; // How many pixels to scroll
@@ -119,7 +145,24 @@ for(let i=0; i < openModal.length; i++){
 }
 
 
-// openModal.onclick = function(){
-//   Modal.style.display = "block";
-// }
+//Mobile Menu Click Effect
+// $(function(){
+//   $("header .menu-icon").click(function(){
+//     $(".mobile-box").animate({
+//       right:0,
+//     },300);
+//     $(".overlay1").animate({
+//       "width":"100%"
+//     },300)
+//   });
+  
+//   $(".close_btn, .overlay1").click(function(){
+//     $(".mobile-box").animate({
+//       right:'-100%',
+//     },300);
+//     $(".overlay1").animate({
+//       "width":0
+//     },300)
+//   });
+// });
 

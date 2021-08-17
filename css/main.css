@@ -1,4 +1,5 @@
 .wrap {width: 100%; height: auto; position: relative;}
+section.home {padding: 0;}
 .intro {width: 100%; height: 100vh; background:#f0f0f0; position: relative;}
 .intro>center{border-right: 1px solid;}
 .intro .text {position: absolute; top: 50%; transform: translateY(-50%); z-index: 1;}
@@ -44,16 +45,34 @@
   100%{height: 0;}
 }
 
+/* Mobile Navigation style code */
+/* .overlay1 {position: fixed; width: 0; height: 100vh; right: 0; top: 0; background: #edecea; z-index: 10;}
+.overlay1 img {position: absolute; bottom: 0;}
+.mobile-box {position: fixed; top: 0; right: -50%; z-index: 10; text-align: right; padding: 50px; width: 100%; height: 100%;}
+.mobile-box .menu-icon, .close_btn {width: 100%; padding: 10px 0; font-size: 30px;}
+.mobile_nav {width: 100%;}
+.mobile_nav .mobile_inner {width: 100%;}
+.mobile_nav .mobile_inner .mobile_li {width: 100%;}
+.mobile_nav .nav li {width: 100%; padding: 20px 0;}
+.mobile_nav .nav li button {font-size: 30px;} */
+
+
 header{width: 100%; padding: 30px 0; position: absolute; top: 0; left: 0;}
 header .grid {display: flex; justify-content: space-between; align-items: center;}
 header .logo{width: 80px;}
 header .logo img{width: 100%;}
 
 header .nav {display: flex; width: 50%; justify-content: space-between; align-items: center;}
-.fixed-nav {width: 100%; padding: 15px 0; position: fixed; background-color:rgba(255,255,255,0.8); box-shadow: 0 3px 7px rgba(0, 0, 0, 10%); z-index:99;}
-header .nav button {font-size: 16px;}
+.fixed-nav {width: 100%; padding: 15px 0; position: fixed; background-color:rgba(255,255,255,0.8); box-shadow: 0 3px 7px rgba(0, 0, 0, 10%); z-index:9; transition: all 0.4s;}
+header .nav li {width: 100%; text-align: center;}
+.nav-color{color: #c6dfd6;}
+header .nav button {font-size: 16px; cursor:pointer; transition: all 0.2s;}
+header .nav button:hover {color: #c6dfd6;}
 
-header .menu-icon {font-size: 20px;}
+header .menu-icon {position: relative;}
+header .menu-icon span{width: 15px; height: 2px; background:#343434; display: block; position: absolute;}
+header .menu-icon span:nth-child(2) {width: 2px; height: 15px;}
+
 
 /* About me Section Style Code */
 section {width: 100%; height: auto;}
@@ -105,7 +124,7 @@ section {width: 100%; height: auto;}
 .each-pf-box .pf-imgbox {width: 70%; height: 600px; overflow: hidden; box-shadow:28px 4px 33px -15px rgba(191,191,191,0.53); float:left;}
 /* .each-pf-box .pf-imgbox .pfimg {background: url(../img/pf_01.jpg) no-repeat center center; background-size: cover; width: 100%; height: 100%;} */
 .each-pf-box .pf-imgbox .pfimg {margin:auto; height:100%; overflow:hidden; position: relative;}
-.each-pf-box .pf-imgbox .pfimg img{height:100%; transition: all 0.6s;}
+.each-pf-box .pf-imgbox .pfimg img{height:100%; transition: all 0.6s; position: relative; right: 10%;}
 .each-pf-box .pf-imgbox .pfimg:hover img {transform: scale(1.1);}
 .each-pf-box .pf-imgbox .pfimg .overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); opacity:0; transition: all 0.6s;}
 .each-pf-box .pf-imgbox .pfimg:hover .overlay {opacity: 1;}
@@ -173,3 +192,18 @@ section {width: 100%; height: auto;}
 
 #contact .form-area .send-btn{width: 100%; height: auto; display: flex; justify-content: center;}
 #contact .form-area .send-btn button{border: 0; color: #fff; font-weight: 600; padding: 10px 30px; background: #c6dfd6; cursor: pointer;}
+
+/*detail Pass Check Page Style Code*/
+.passcheck {width: 100%;}
+.passcheck>.bg>.title-text{text-align: center; padding-top: 150px;}
+.passcheck .bg{width: 100%; height: 100vh; background: #fff;position: absolute; top: 0; left: 0;}
+.passcheck .pass_check {position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: inline-block; padding: 50px; box-shadow:0px 0px 8px 0px rgba(191,191,191,0.53); border-radius: 20px;}
+.passcheck .pass_check .passbox{display: flex; justify-content: space-between; align-items: center;}
+.passcheck .pass_check b {width:100%; font-size: 16px; font-weight: 500; padding: 10px 15px; text-align:center; background: #EDECEA;}
+.passcheck .pass_check input {border: 1px solid #edecea; height: 43px; margin-left: 10px; font-size: 16px;}
+.passcheck .pass_check input:focus{border: 1px solid #c6dfd6;}
+.passcheck .pass_check .checkbtn {text-align: center; margin-top: 20px; width: 100%; height: 40px; background: #C6DFD6; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.4s;}
+.passcheck .pass_check .checkbtn:hover {border: 1px solid #c6dfd6; background: #fff;}
+.passcheck .pass_check .checkbtn:hover button{color: #343434;}
+.passcheck .pass_check .checkbtn button {color: #fff; font-weight: 600; font-size: 16px; transition: all 0.4s; width: 100%; height: 100%;}
+

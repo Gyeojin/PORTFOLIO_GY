@@ -19,40 +19,70 @@
     
 </head>
 <body>
-
   <div class="wrap">
-    <div class="intro">
-      <div class="center">
-        <div class="text">
-          <h2>Nice to meet you !<br>반갑습니다.</h2>
-          <b>고여진의 포트폴리오 입니다.</b>
-        </div>
-        <div class="intro-img">
-          <img src="../portfolio_GY/img/slide_01.jpg" alt="">
-        </div>
-        <div class="infinity-img">
-          <div class="line"></div>
-          <img src="../portfolio_GY/img/intro_rotate.png" alt="">
-          <i class="fa fa-angle-double-down"></i>
-        </div>
-      </div>
+    <!-- Mobile Navigation -->
+    <!-- <div class="overlay1">
+      <img src="/portfolio_GY/img/mobile_nav_bg2.png" alt="">
     </div>
-    <header>
-      <div class="center grid">
-        <div class="logo">
-          <img src="../portfolio_GY/img/portfolio_logo.png" alt="logo">
-        </div>
-        <ul class="nav">
-          <li><button>HOME</button></li>
-          <li><button>ABOUT</button></li>
-          <li><button>PORTFOLIO</button></li>
-          <li><button>CONTACT ME</button></li>
+    <div class="mobile-box">
+      <nav class="mobile_nav">
+        <ul class="mobile_inner">
+          <li class="mobile_li">
+            <div class="close_btn">
+              <a href="#"><i class="fa fa-times"></i></a>
+            </div>
+          </li>
+          <ul class="nav">
+            <li><button>HOME</button></li>
+            <li><button>ABOUT</button></li>
+            <li><button>PORTFOLIO</button></li>
+            <li><button>DESIGN</button></li>
+            <li><button>CONTACT</button></li>
+          </ul>
         </ul>
-        <div class="menu-icon">
-          <a href="#"><i class="fa fa-bars"></i></a>
+      </nav>
+    </div> -->
+    <!-- End of Mobile Navigation -->
+    <section class="home">
+      <div class="intro">
+        <div class="center">
+          <div class="text">
+            <h2>Nice to meet you !<br>반갑습니다.</h2>
+            <b>고여진의 포트폴리오 입니다.</b>
+          </div>
+          <div class="intro-img">
+            <img src="../portfolio_GY/img/intro-img.jpg" alt="">
+          </div>
+          <div class="infinity-img">
+            <div class="line"></div>
+            <img src="../portfolio_GY/img/intro_rotate.png" alt="">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
         </div>
       </div>
-    </header>
+
+
+      <header>
+        <div class="center grid">
+          <div class="logo">
+            <img src="../portfolio_GY/img/portfolio_logo.png" alt="logo">
+          </div>
+          <ul class="nav">
+            <li><button>HOME</button></li>
+            <li><button>ABOUT</button></li>
+            <li><button>PORTFOLIO</button></li>
+            <li><button>DESIGN</button></li>
+            <li><button>CONTACT</button></li>
+          </ul>
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+      </header>
+    </section>
+    
     <section class="about">
       <div class="aboutme">
         <div class="center">
@@ -149,12 +179,13 @@
           <div class="each-pf-box">
             <div class="pf-imgbox">
               <div class="pfimg">
-                <img src="../portfolio_GY/img/portfolio_bg.png" alt="">
+                <img src="/portfolio_GY/img/pf_02.jpg" alt="">
+                <div class="overlay"></div>
               </div>
             </div>
             <div class="pf-txtbox">
-              <b>My Schedule</b>
-              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
+              <b>API-Go Camp!</b>
+              <p>공공 API 데이터를 활용한 캠핑 앱 프로토타입<br>현재 위치 기반 캠핑업체 검색</p>
               <span class="first">프로젝트 인원 | 1인</span>
               <span>작업 기간 | 2주</span>
               <button id="openModal">DETAIL</button>
@@ -164,12 +195,13 @@
           <div class="each-pf-box">
             <div class="pf-imgbox">
               <div class="pfimg">
-                <img src="../portfolio_GY/img/pf-content.jpg" alt="">
+                <img src="/portfolio_GY/img/pf_03.jpg" alt="">
+                <div class="overlay"></div>
               </div>
             </div>
             <div class="pf-txtbox">
-              <b>My Schedule</b>
-              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
+              <b>PHP - Zay</b>
+              <p>PHP 기반 인터넷 쇼핑몰<br>회원가입/로그인/상세페이지 코멘트 등 구현</p>
               <span class="first">프로젝트 인원 | 1인</span>
               <span>작업 기간 | 2주</span>
               <button id="openModal">DETAIL</button>
@@ -179,14 +211,15 @@
           <div class="each-pf-box">
             <div class="pf-imgbox">
               <div class="pfimg">
-                <img src="../portfolio_GY/img/pf_01.jpg" alt="">
+                <img src="../portfolio_GY/img/pf_04.jpg" alt="">
+                <div class="overlay"></div>
               </div>
             </div>
             <div class="pf-txtbox">
-              <b>My Schedule</b>
-              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
+              <b>MAMMOTH COFFEE</b>
+              <p>FullPage 플러그인을 이용한 클론 코딩<br>메인페이지+반응형 구현</p>
               <span class="first">프로젝트 인원 | 1인</span>
-              <span>작업 기간 | 2주</span>
+              <span>작업 기간 | 1주</span>
               <button id="openModal">DETAIL</button>
               <a href="#">WEB SITE</a>
             </div>
@@ -196,7 +229,7 @@
       <div id="pf-Modal" class="modal1">
         <div class="modal-box">
           <div class="modal-con">
-            <img src="../portfolio_GY/img/pf-content.jpg" alt="">
+            <img src="/portfolio_GY/img/pf-content.jpg" alt="">
             <div class="close" id="close">
               <span></span>
               <span></span>
@@ -207,7 +240,7 @@
       <div id="pf-Modal" class="modal2">
         <div class="modal-box">
           <div class="modal-con">
-            <img src="../portfolio_GY/img/pf-content.jpg" alt="">
+            <img src="/portfolio_GY/img/pf-content_APIcamp.jpg" alt="">
             <div class="close" id="close">
               <span></span>
               <span></span>
@@ -218,7 +251,7 @@
       <div id="pf-Modal" class="modal3">
         <div class="modal-box">
           <div class="modal-con">
-            <img src="../portfolio_GY/img/pf-content.jpg" alt="">
+            <img src="../portfolio_GY/img/pf-content_zay.jpg" alt="">
             <div class="close" id="close">
               <span></span>
               <span></span>
@@ -300,6 +333,7 @@
               //echo $msg_result;
               
               while($msg_result_row=mysqli_fetch_array($msg_result)){
+                $pf_idx = $msg_result_row['pf_msg_idx'];
                 $pf_name = $msg_result_row['pf_msg_id'];
                 $pf_pass = $msg_result_row['pf_msg_pass'];
                 $pf_email = $msg_result_row['pf_msg_email'];
@@ -312,7 +346,7 @@
             <li class="msg-con">
               <span><?=$pf_name?></span>
               <span><?=$pf_email?></span>
-              <span><?=$pf_tit?></span>
+              <span><a href="/portfolio_GY/page/pass_check_page.php?pf_idx=<?=$pf_idx?>"><?=$pf_tit?></a></span>
               <span><?=$pf_reg?></span>
             </li>
             <?php
@@ -350,8 +384,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
   <script type='text/javascript' src='../portfolio_GY/lib/jquery.mousewheel.min.js'></script> -->
-  <script src="../portfolio_GY/js/main.js"></script>
-  <script src="../portfolio_GY/js/jq.js"></script>
+  <script src="/portfolio_GY/js/main.js"></script>
+  <script src="/portfolio_GY/js/jq.js"></script>
   <script>
     const submitBtn = document.querySelector('.send-btn button');
     
