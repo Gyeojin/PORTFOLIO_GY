@@ -20,8 +20,10 @@
 @media screen and (max-width: 750px) {
   .intro .text {top: 40%;}
   .intro .intro-img {width: 250px;}
-  header .nav {display: none;}
-  header .menu-icon {font-size: 30px; display: block;}
+  header .nav {display: block; position: absolute; right: -50%; top: 100%; width: 100%; z-index: 1;}
+  header .nav li {text-align: right; padding: 20px 5px;}
+  header .nav button {font-size: 26px;}
+  header .menu-icon {display: block; z-index: 1;}
   .intro .text b {font-size: 4vw;}
   .intro .infinity-img .line {height: 400%;}
 
@@ -31,7 +33,7 @@
   .intro .text {top: 30%;}
   .intro .text h2 {font-size: 40px;}
   .intro .text b {font-size: 20px;}
-  .intro .intro-img {width: 220px; left: 10%; transform: translateX(0);}
+  .intro .intro-img {left: 10%; transform: translateX(0);}
   .intro .infinity-img .line {height: 500%;}
   .intro .infinity-img {width:80px; height: 80px;}
   header .logo {width: 60px;}

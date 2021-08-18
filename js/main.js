@@ -55,8 +55,8 @@ function fixNav() {
 }
 window.addEventListener('scroll', fixNav);
 
-//console.log($(".nav li button"));
 
+//Changing Navigation font color when Scrolling------------------//
 var activeHeader = function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -74,11 +74,13 @@ var activeHeader = function(){
   });
 }
 activeHeader();
+//------------------------------------------------------------------//
 
+
+//Click Scrolling Event Code---------------------------------------//
 const navButton = document.querySelectorAll('.nav button');
-console.log(navButton);
-
 const home = document.querySelector('.intro');
+const infiArrow = document.querySelector('.intro .infinity-img');
 const aboutMe = document.querySelector('.about');
 const portFolio = document.querySelector('.pf');
 const design = document.querySelector('.design');
@@ -92,6 +94,10 @@ const contactTop = contact.offsetTop;
 
 navButton[0].onclick = function(){
   window.scroll({top:homeTop, behavior: 'smooth'})
+}
+
+infiArrow.onclick = function(){
+  window.scroll({top:aboutMeTop, behavior: 'smooth'})
 }
 
 navButton[1].onclick = function(){
@@ -109,12 +115,14 @@ navButton[3].onclick = function(){
 navButton[4].onclick = function(){
   window.scroll({top:contactTop, behavior: 'smooth'})
 }
+//-----------------------------------------------------------//
 
 
+// Portfolio Total Code-----------------------------------//
+//MouseWheel Code
 const mouseWheel = document.querySelector('.pf-box');
 const pfBox = document.querySelector('.each-pf-box');
 var pfWidth = pfBox.offsetWidth;
-//console.log(pfWidth);
 
 mouseWheel.addEventListener('wheel', function(e) {
     const race = pfWidth; // How many pixels to scroll
@@ -125,13 +133,9 @@ mouseWheel.addEventListener('wheel', function(e) {
 		e.preventDefault();
 });
 
-
-
-
+//Modal Code
 const openModal = document.querySelectorAll('#openModal');
-//console.log(openModal);
 const Modal = document.querySelectorAll('#pf-Modal');
-//console.log(Modal);
 
 for(let i=0; i < openModal.length; i++){
   openModal[i].onclick = function(){
@@ -143,26 +147,41 @@ for(let i=0; i < openModal.length; i++){
     }
   }
 }
+//----------------------------------------------------------//
 
 
-//Mobile Menu Click Effect
-// $(function(){
-//   $("header .menu-icon").click(function(){
-//     $(".mobile-box").animate({
-//       right:0,
-//     },300);
-//     $(".overlay1").animate({
-//       "width":"100%"
-//     },300)
-//   });
+// Mobile Menu Click Effect---------------------------------//
+$(function(){
+  $("header .menu-icon").click(function(){
+    $(this).toggleClass('icon-rotate');
+    if($(this).hasClass('icon-rotate')){
+      $("header .nav").animate({
+        right:"5%"
+      },300);
+      $(".overlay1").animate({
+        "width":"100%"
+      },300);
+    } else {
+      $("header .nav").animate({
+        right:'-50%'
+      },300);
+      $(".overlay1").animate({
+        "width":0
+      },300);
+    }
+  });
+
+  $("header .nav button").click(function(){
+    $("header .menu-icon").removeClass('icon-rotate');
+    $("header .nav").animate({
+      right:'-50%'
+    },300);
+    $(".overlay1").animate({
+      "width":0
+    },300);
+  });
+});
+
+
+
   
-//   $(".close_btn, .overlay1").click(function(){
-//     $(".mobile-box").animate({
-//       right:'-100%',
-//     },300);
-//     $(".overlay1").animate({
-//       "width":0
-//     },300)
-//   });
-// });
-

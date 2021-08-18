@@ -28,7 +28,7 @@ section.home {padding: 0;}
 
 .intro .intro-img {width: 300px; _height: 600px; position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%);}
 .intro .intro-img img {width: 100%;}
-.intro .infinity-img {position: absolute; bottom: 5%; right: 5%; width: 100px; height: 100px;}
+.intro .infinity-img {position: absolute; bottom: 5%; right: 5%; width: 100px; height: 100px; cursor: pointer;}
 .intro .infinity-img .line {position: absolute; width: 1px; height: 500%; background: #222; bottom: 60%; right: 50%; transform: translateX(-50%);}
 .intro .infinity-img .line.active {animation: line-active 1s 1 forwards;}
 .intro .infinity-img i {font-size: 22px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
@@ -46,8 +46,7 @@ section.home {padding: 0;}
 }
 
 /* Mobile Navigation style code */
-/* .overlay1 {position: fixed; width: 0; height: 100vh; right: 0; top: 0; background: #edecea; z-index: 10;}
-.overlay1 img {position: absolute; bottom: 0;}
+/* 
 .mobile-box {position: fixed; top: 0; right: -50%; z-index: 10; text-align: right; padding: 50px; width: 100%; height: 100%;}
 .mobile-box .menu-icon, .close_btn {width: 100%; padding: 10px 0; font-size: 30px;}
 .mobile_nav {width: 100%;}
@@ -58,6 +57,8 @@ section.home {padding: 0;}
 
 
 header{width: 100%; padding: 30px 0; position: absolute; top: 0; left: 0;}
+.overlay1 {position: fixed; width: 0; height: 100vh; right: 0; top: 0; background: #edecea; z-index: 1;}
+.overlay1 img {position: absolute; bottom: 0;}
 header .grid {display: flex; justify-content: space-between; align-items: center;}
 header .logo{width: 80px;}
 header .logo img{width: 100%;}
@@ -69,35 +70,53 @@ header .nav li {width: 100%; text-align: center;}
 header .nav button {font-size: 16px; cursor:pointer; transition: all 0.2s;}
 header .nav button:hover {color: #c6dfd6;}
 
-header .menu-icon {position: relative;}
+header .menu-icon {position: relative; width: 2%; height: 100%; display: none; transition: all 0.4s;}
+.icon-rotate {transform: rotate(135deg);}
 header .menu-icon span{width: 15px; height: 2px; background:#343434; display: block; position: absolute;}
-header .menu-icon span:nth-child(2) {width: 2px; height: 15px;}
+header .menu-icon span:nth-child(1) {left: 50%; transform: translateX(-50%);}
+header .menu-icon span:nth-child(2) {width: 2px; height: 15px; left: 50%; transform: translate(-50%, -43%);}
 
 
 /* About me Section Style Code */
 section {width: 100%; height: auto;}
 .aboutme {width: 100%;}
 .aboutme>.center{display: flex;}
-.aboutme-left {width: 50%; border-right: 1px solid #ccc; padding: 20px 40px; opacity: 0;}
+.desc {font-size: 16px; font-weight: 400; padding: 10px 0; margin-bottom: 30px;}
+.desc p {padding-top: 10px;}
+.desc p i {margin-right: 10px;}
+.aboutme-left {width: 50%; border-right: 1px solid #ccc; padding: 20px 50px; opacity: 0; position: relative;}
 .title-text h3 {font-size: 30px;}
 .title-text p {font-size: 16px; padding: 10px 0;}
-.aboutme-left .aboutme-img {width: 60%; transform:translateX(60%); margin-top: 10%;}
+.aboutme-left .aboutme-img {position: absolute; width: 270px; right: 5%; bottom: 0;}
 .aboutme-left .aboutme-img img{width: 100%;}
+.line {width: 100%; height: 1px; background:#ccc; margin: 50px 0;}
+.aboutme-left .viewmore {width: 100%; padding: 15px 20px; border: 1px solid #343434; border-radius: 5px; transition: all;}
+.aboutme-left .viewmore:hover {border: 1px solid #C6DFD6; color: #C6DFD6;}
 
-.aboutme-right {width: 50%; padding: 20px 40px; opacity: 0;}
-.aboutme-right .skills {display: flex; justify-content: space-between; margin: 50px 0;}
+.aboutme-right {width: 50%; padding: 20px 50px; opacity: 0;}
+.aboutme-right .skills {display: flex; justify-content: space-between; margin: 20px 0;}
 .aboutme-right .skills .skills-img {width: 10%; margin-left: 10px;}
 .aboutme-right .skills .skills-img img {width: 100%;}
 .aboutme-right .skills .skills-text {width: 80%;}
 .aboutme-right .skills .skills-text p {font-size: 18px; font-weight: 600; margin-bottom: 10px;}
 .aboutme-right .skills .bar {width: 100%; height: 25px; border-radius: 15px; background: #e44d26; position: relative; overflow: hidden;}
-.aboutme-right .skills .bar b {position: absolute; right: 30px; color: #fff; top: 50%; transform: translateY(-50%); font-size: 13px; font-weight: 300;}
+.aboutme-right .skills .bar b {position: absolute; right: 15px; color: #fff; top: 50%; transform: translateY(-50%); font-size: 13px; font-weight: 300;}
 .inner-bar {width:0%; height: 25px; border-radius: 15px; position: absolute; background: #fa8452;}
+
+
+.otherskills {margin-top: 30px; display: flex; width: 50%;  text-align: center;}
+.otherskills .eachSkills {display: flex; flex-direction: column; align-items: center;}
+.otherskills .skills-img {width: 60%;}
+.otherskills .skills-img img {width: 100%;}
+.otherskills .skills-text {width: 80%;}
+.otherskills .skills-text p {font-size: 16px; font-weight: 400; margin-bottom: 10px;}
+.otherskills .bar {height: 25px; border-radius: 15px; background: #0d1e26; position: relative;}
+.otherskills .bar b {position: absolute; color: #fff; top: 50%; transform: translate(-50%, -50%); font-size: 13px; font-weight: 300;}
 
 /* Portfolio Section Style Code */
 .pf {position: relative;}
 .pf .bg {background: url(../img/portfolio_bg.png) no-repeat center center; background-size: cover; width: 100%; height: 90%; position: absolute; z-index: -1;}
-.pf-center {height: 100%; display: flex; justify-content: center; align-items: center;}
+.pf-center {height: 100%; display: flex; justify-content: center; align-items: center; padding-top: 50px;}
 
 
 .pf-box {

@@ -20,29 +20,6 @@
 </head>
 <body>
   <div class="wrap">
-    <!-- Mobile Navigation -->
-    <!-- <div class="overlay1">
-      <img src="/portfolio_GY/img/mobile_nav_bg2.png" alt="">
-    </div>
-    <div class="mobile-box">
-      <nav class="mobile_nav">
-        <ul class="mobile_inner">
-          <li class="mobile_li">
-            <div class="close_btn">
-              <a href="#"><i class="fa fa-times"></i></a>
-            </div>
-          </li>
-          <ul class="nav">
-            <li><button>HOME</button></li>
-            <li><button>ABOUT</button></li>
-            <li><button>PORTFOLIO</button></li>
-            <li><button>DESIGN</button></li>
-            <li><button>CONTACT</button></li>
-          </ul>
-        </ul>
-      </nav>
-    </div> -->
-    <!-- End of Mobile Navigation -->
     <section class="home">
       <div class="intro">
         <div class="center">
@@ -60,9 +37,10 @@
           </div>
         </div>
       </div>
-
-
       <header>
+        <div class="overlay1">
+          <img src="/portfolio_GY/img/mobile_nav_bg2.png" alt="">
+        </div>
         <div class="center grid">
           <div class="logo">
             <img src="../portfolio_GY/img/portfolio_logo.png" alt="logo">
@@ -79,30 +57,42 @@
             <span></span>
           </div>
         </div>
-
       </header>
     </section>
-    
     <section class="about">
       <div class="aboutme">
         <div class="center">
           <div class="aboutme-left">
             <div class="title-text">
               <h3>About Me.</h3>
+            </div>
+            <div class="desc">
+              <p>천천히, 확실하게 알아가는 중인 아기개발자 & 퍼블리셔.<br>호기심이 많아 이것저것 탐구하고 상상하고 구현하는 일을 즐깁니다.</p>
               <p>천천히, 확실하게 알아가는 중인 아기개발자 & 퍼블리셔.<br>호기심이 많아 이것저것 탐구하고 상상하고 구현하는 일을 즐깁니다.</p>
             </div>
+            <div class="line"></div>
+            <div class="title-text">
+              <h3>그래서, 저의 목표는요-</h3>
+            </div>
+            <div class="desc">
+              <p><i class="fa fa-check"></i>꾸준히 성장하는 개발자</p>
+              <p><i class="fa fa-check"></i>항상 사용자의 편에서 고민하고 반영하는 개발자</p>
+              <p><i class="fa fa-check"></i>협업자와의 소통이 원활한 개발자</p>
+              <p><i class="fa fa-check"></i>끈기있게 문제를 파고드는 개발자</p>
+            </div>
+            <a href="#" class="viewmore">이력서 보기</a>
             <div class="aboutme-img">
-              <img src="../portfolio_GY/img/aboutme.png" alt="">
+              <img src="/portfolio_GY/img/aboutme.png" alt="">
             </div>
           </div>
           <div class="aboutme-right">
             <div class="title-text">
-              <h3>Skills.</h3>
-              <p>이런 것들을 할 수 있고, <br></vr>채워나가는 중이에요.</p>
+              <h3>Coding Skills.</h3>
+              <p>이런 것들을 할 수 있고, 채워나가는 중이에요.</p>
             </div>
             <div class="skills">
               <div class="skills-img">
-                <img src="../portfolio_GY/img/html.png" alt="">
+                <img src="/portfolio_GY/img/html.png" alt="">
               </div>
               <div class="skills-text">
                 <p>HTML</p>
@@ -114,7 +104,7 @@
             </div>
             <div class="skills">
               <div class="skills-img">
-                <img src="../portfolio_GY/img/css.png" alt="">
+                <img src="/portfolio_GY/img/css.png" alt="">
               </div>
               <div class="skills-text">
                 <p>CSS</p>
@@ -126,7 +116,7 @@
             </div>
             <div class="skills">
               <div class="skills-img">
-                <img src="../portfolio_GY/img/java.png" alt="">
+                <img src="/portfolio_GY/img/java.png" alt="">
               </div>
               <div class="skills-text">
                 <p>JAVA SCRIPT</p>
@@ -138,7 +128,7 @@
             </div>
             <div class="skills">
               <div class="skills-img">
-                <img src="../portfolio_GY/img/php.png" alt="">
+                <img src="/portfolio_GY/img/php.png" alt="">
               </div>
               <div class="skills-text">
                 <p>PHP</p>
@@ -147,6 +137,46 @@
                   <div class="inner-bar"></div>
                 </div>
               </div>
+            </div>
+            <div class="line"></div>
+            <div class="title-text">
+              <h3>Graphic & Other Skills.</h3>
+            </div> 
+            <div class="otherskills">
+              <div class="eachSkills">
+                <div class="skills-img">
+                  <img src="/portfolio_GY/img/PS.png" alt="">
+                </div>
+                <div class="skills-text">
+                  <p>PhotoShop</p>
+                  <div class="bar">
+                    <b>95%</b>
+                  </div>
+                </div>
+              </div>
+              <div class="eachSkills">
+                <div class="skills-img">
+                  <img src="/portfolio_GY/img/Ai.png" alt="">
+                </div>
+                <div class="skills-text">
+                  <p>Illustrator</p>
+                  <div class="bar">
+                  <b>95%</b>
+                  </div>
+                </div>
+              </div>
+              <div class="eachSkills">
+                <div class="skills-img">
+                  <img src="/portfolio_GY/img/excel.png" alt="">
+                </div>
+                <div class="skills-text">
+                  <p>Excel</p>
+                  <div class="bar">
+                    <b>90%</b>
+                  </div>
+                </div>
+              </div>
+                
             </div>
           </div> 
         </div>
