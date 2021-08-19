@@ -10,6 +10,20 @@
 }
 
 @media screen and (max-width: 1040px) {
+  .aboutme>.center {display: block;}
+  .aboutme-left {border-right: 0; display: flex; justify-content: space-between; width: 100%;}
+  .left-top {width: 50%; padding: 20px 40px 20px 0;}
+  .desc {margin-bottom: 0;}
+  .line {display: none;}
+  .left-down {width: 50%; padding: 20px 0 20px 40px; border-left: 1px solid;}
+  .aboutme-left .aboutme-img {display: none;}
+  .aboutme-right {width: 100%; display: flex; justify-content: space-between; padding-top: 30px; border-top:1px solid}
+  .right-top {width: 50%; padding-right: 40px; border-right: 1px solid;}
+  .right-down {width: 50%; padding-left: 40px;}
+  .otherskills {display: flex; justify-content: flex-start;}
+  .otherskills .eachSkills {width: 30%; padding-right: 10px;}
+  .otherskills .skills-img {width: 50%;}
+  .otherskills .skills-text{width: 100%;}
   .intro .text h2 {font-size: 10vw;}
   .intro>.center {padding-left: 40px;}
   header>.center {padding: 0 40px;}

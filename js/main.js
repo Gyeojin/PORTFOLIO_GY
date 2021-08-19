@@ -4,7 +4,11 @@ function fixNav() {
   const aboutLeft = document.querySelector('.aboutme-left');
   const aboutRight = document.querySelector('.aboutme-right');
   const pf = document.querySelector('.pf');
-  const ds = document.querySelector('.design');
+  const ds = document.querySelector('.design .title-text');
+  const dsEach = document.querySelectorAll('.design-eachbox');
+  const contact = document.querySelector('#contact');
+  const Arr = ['sub-fade-in','third-fade-in','four-fade-in'];
+
 
   //console.log(aboutBar);
   const nav1 = window.pageYOffset; //스크롤값 알려줌
@@ -49,6 +53,22 @@ function fixNav() {
   
   if (nav1 >= 1929) {
     ds.classList.add('fade-in');
+  } else {
+    return;
+  }
+
+  if (nav1 >= 2140) {
+    for(let i=0; i<dsEach.length; i++){
+      dsEach[0].classList.add(Arr[0]);
+      dsEach[1].classList.add(Arr[1]);
+      dsEach[2].classList.add(Arr[2]);
+    }
+  } else {
+    return;
+  }
+
+  if (nav1 >= 2764) {
+    contact.classList.add('fade-in');
   } else {
     return;
   }

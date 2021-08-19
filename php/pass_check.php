@@ -2,8 +2,8 @@
 
   include $_SERVER["DOCUMENT_ROOT"]."/connect/db_conn.php";
 
-  $pf_idx = $_GET['pf_idx'];
-  $pf_pass_check = $_POST['pf_passCheck'];
+  $pf_idx = $_GET['pf_idx']; //9
+  $pf_pass_check = $_POST['pf_passCheck']; //ssdf
 
   $sql = "SELECT * FROM pf_msg WHERE pf_msg_idx='{$pf_idx}'";
 

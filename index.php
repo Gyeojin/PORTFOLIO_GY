@@ -63,120 +63,127 @@
       <div class="aboutme">
         <div class="center">
           <div class="aboutme-left">
-            <div class="title-text">
-              <h3>About Me.</h3>
-            </div>
-            <div class="desc">
-              <p>천천히, 확실하게 알아가는 중인 아기개발자 & 퍼블리셔.<br>호기심이 많아 이것저것 탐구하고 상상하고 구현하는 일을 즐깁니다.</p>
-              <p>천천히, 확실하게 알아가는 중인 아기개발자 & 퍼블리셔.<br>호기심이 많아 이것저것 탐구하고 상상하고 구현하는 일을 즐깁니다.</p>
+            <div class="left-top">
+              <div class="title-text">
+                <h3>About Me.</h3>
+              </div>
+              <div class="desc">
+                <p>천천히, 확실하게 알아가는 중인 아기개발자 & 퍼블리셔.<br>호기심이 많아 이것저것 탐구하고 상상하고 구현하는 일을 즐깁니다.</p>
+                <p>천천히, 확실하게 알아가는 중인 아기개발자 & 퍼블리셔.<br>호기심이 많아 이것저것 탐구하고 상상하고 구현하는 일을 즐깁니다.</p>
+              </div>
             </div>
             <div class="line"></div>
-            <div class="title-text">
-              <h3>그래서, 저의 목표는요-</h3>
-            </div>
-            <div class="desc">
-              <p><i class="fa fa-check"></i>꾸준히 성장하는 개발자</p>
-              <p><i class="fa fa-check"></i>항상 사용자의 편에서 고민하고 반영하는 개발자</p>
-              <p><i class="fa fa-check"></i>협업자와의 소통이 원활한 개발자</p>
-              <p><i class="fa fa-check"></i>끈기있게 문제를 파고드는 개발자</p>
-            </div>
-            <a href="#" class="viewmore">이력서 보기</a>
-            <div class="aboutme-img">
-              <img src="/portfolio_GY/img/aboutme.png" alt="">
+            <div class="left-down">
+              <div class="title-text">
+                <h3>그래서, 저의 목표는요-</h3>
+              </div>
+              <div class="desc">
+                <p><i class="fa fa-check"></i>꾸준히 성장하는 개발자</p>
+                <p><i class="fa fa-check"></i>항상 사용자의 편에서 고민하고 반영하는 개발자</p>
+                <p><i class="fa fa-check"></i>협업자와의 소통이 원활한 개발자</p>
+                <p><i class="fa fa-check"></i>끈기있게 문제를 파고드는 개발자</p>
+              </div>
+              <a href="#" class="viewmore">이력서 보기</a>
+              <div class="aboutme-img">
+                <img src="/portfolio_GY/img/aboutme.png" alt="">
+              </div>
             </div>
           </div>
           <div class="aboutme-right">
-            <div class="title-text">
-              <h3>Coding Skills.</h3>
-              <p>이런 것들을 할 수 있고, 채워나가는 중이에요.</p>
-            </div>
-            <div class="skills">
-              <div class="skills-img">
-                <img src="/portfolio_GY/img/html.png" alt="">
+            <div class="right-top">
+              <div class="title-text">
+                <h3>Coding Skills.</h3>
+                <p>이런 것들을 할 수 있고, 채워나가는 중이에요.</p>
               </div>
-              <div class="skills-text">
-                <p>HTML</p>
-                <div class="bar">
-                  <b value="80">80%</b>
-                  <div class="inner-bar"></div>
+              <div class="skills">
+                <div class="skills-img">
+                  <img src="/portfolio_GY/img/html.png" alt="">
+                </div>
+                <div class="skills-text">
+                  <p>HTML</p>
+                  <div class="bar">
+                    <b value="80">80%</b>
+                    <div class="inner-bar"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="skills">
-              <div class="skills-img">
-                <img src="/portfolio_GY/img/css.png" alt="">
-              </div>
-              <div class="skills-text">
-                <p>CSS</p>
-                <div class="bar">
-                  <b value="80">80%</b>
-                  <div class="inner-bar"></div>
+              <div class="skills">
+                <div class="skills-img">
+                  <img src="/portfolio_GY/img/css.png" alt="">
+                </div>
+                <div class="skills-text">
+                  <p>CSS</p>
+                  <div class="bar">
+                    <b value="80">80%</b>
+                    <div class="inner-bar"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="skills">
-              <div class="skills-img">
-                <img src="/portfolio_GY/img/java.png" alt="">
-              </div>
-              <div class="skills-text">
-                <p>JAVA SCRIPT</p>
-                <div class="bar">
-                  <b value="40">40%</b>
-                  <div class="inner-bar"></div>
+              <div class="skills">
+                <div class="skills-img">
+                  <img src="/portfolio_GY/img/java.png" alt="">
+                </div>
+                <div class="skills-text">
+                  <p>JAVA SCRIPT</p>
+                  <div class="bar">
+                    <b value="40">40%</b>
+                    <div class="inner-bar"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="skills">
-              <div class="skills-img">
-                <img src="/portfolio_GY/img/php.png" alt="">
-              </div>
-              <div class="skills-text">
-                <p>PHP</p>
-                <div class="bar">
-                  <b value="30">30%</b>
-                  <div class="inner-bar"></div>
+              <div class="skills">
+                <div class="skills-img">
+                  <img src="/portfolio_GY/img/php.png" alt="">
+                </div>
+                <div class="skills-text">
+                  <p>PHP</p>
+                  <div class="bar">
+                    <b value="30">30%</b>
+                    <div class="inner-bar"></div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="line"></div>
-            <div class="title-text">
-              <h3>Graphic & Other Skills.</h3>
-            </div> 
-            <div class="otherskills">
-              <div class="eachSkills">
-                <div class="skills-img">
-                  <img src="/portfolio_GY/img/PS.png" alt="">
+            <div class="right-down">
+              <div class="title-text">
+                <h3>Graphic & Other Skills.</h3>
+              </div> 
+              <div class="otherskills">
+                <div class="eachSkills">
+                  <div class="skills-img">
+                    <img src="/portfolio_GY/img/PS.png" alt="">
+                  </div>
+                  <div class="skills-text">
+                    <p>PhotoShop</p>
+                    <div class="bar">
+                      <b>95%</b>
+                    </div>
+                  </div>
                 </div>
-                <div class="skills-text">
-                  <p>PhotoShop</p>
-                  <div class="bar">
+                <div class="eachSkills">
+                  <div class="skills-img">
+                    <img src="/portfolio_GY/img/Ai.png" alt="">
+                  </div>
+                  <div class="skills-text">
+                    <p>Illustrator</p>
+                    <div class="bar">
                     <b>95%</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="eachSkills">
+                  <div class="skills-img">
+                    <img src="/portfolio_GY/img/excel.png" alt="">
+                  </div>
+                  <div class="skills-text">
+                    <p>Excel</p>
+                    <div class="bar">
+                      <b>90%</b>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="eachSkills">
-                <div class="skills-img">
-                  <img src="/portfolio_GY/img/Ai.png" alt="">
-                </div>
-                <div class="skills-text">
-                  <p>Illustrator</p>
-                  <div class="bar">
-                  <b>95%</b>
-                  </div>
-                </div>
-              </div>
-              <div class="eachSkills">
-                <div class="skills-img">
-                  <img src="/portfolio_GY/img/excel.png" alt="">
-                </div>
-                <div class="skills-text">
-                  <p>Excel</p>
-                  <div class="bar">
-                    <b>90%</b>
-                  </div>
-                </div>
-              </div>
-                
             </div>
           </div> 
         </div>
@@ -281,7 +288,7 @@
       <div id="pf-Modal" class="modal3">
         <div class="modal-box">
           <div class="modal-con">
-            <img src="../portfolio_GY/img/pf-content_zay.jpg" alt="">
+            <img src="/portfolio_GY/img/pf-content_zay.jpg" alt="">
             <div class="close" id="close">
               <span></span>
               <span></span>
@@ -292,7 +299,7 @@
       <div id="pf-Modal" class="modal4">
         <div class="modal-box">
           <div class="modal-con">
-            <img src="../portfolio_GY/img/pf-content.jpg" alt="">
+            <img src="/portfolio_GY/img/pf-content.jpg" alt="">
             <div class="close" id="close">
               <span></span>
               <span></span>
@@ -310,7 +317,8 @@
         <div class="design-box">
           <div class="design-eachbox">
             <div class="design-img">
-              <img src="/portfolio_GY/img/ex.jpg" alt="">
+              <img src="/portfolio_GY/img/design_01.jpg" alt="">
+              <div class="overlay"></div>
             </div>
             <div class="design-txtbox">
               <b>aaaaa</b>
@@ -320,22 +328,24 @@
           </div>
           <div class="design-eachbox">
             <div class="design-img">
-              <img src="/portfolio_GY/img/slide_03.jpg" alt="">
+              <img src="/portfolio_GY/img/design_02.jpg" alt="">
+              <div class="overlay"></div>
             </div>
             <div class="design-txtbox">
-              <b>aaaaa</b>
-              <p>어쩌구저쩌구 설명</p>
-              <a href="#">DETAIL</a>
+              <b>App Prototype Design</b>
+              <p>앱 프로토타입 디자인</p>
+              <a href="https://velog.io/@gyeojin_1/PORTFOLIOGo-Camp">DETAIL</a>
             </div>
           </div>
           <div class="design-eachbox">
             <div class="design-img">
-              <img src="/portfolio_GY/img/slide_04.jpg" alt="">
+              <img src="/portfolio_GY/img/design_03.jpg" alt="">
+              <div class="overlay"></div>
             </div>
             <div class="design-txtbox">
-              <b>aaaaa</b>
-              <p>어쩌구저쩌구 설명</p>
-              <a href="#">DETAIL</a>
+              <b>Detail Page</b>
+              <p>실무에서 활용한 인트로+배너 디자인</p>
+              <a href="https://velog.io/@gyeojin_1/PORTFOLIO디자인-작업">DETAIL</a>
             </div>
           </div>
         </div>
