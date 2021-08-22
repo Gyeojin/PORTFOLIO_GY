@@ -93,7 +93,7 @@
             <div class="right-top">
               <div class="title-text">
                 <h3>Coding Skills.</h3>
-                <p>이런 것들을 할 수 있고, 채워나가는 중이에요.</p>
+                <p>이런 것들을 할 수 있고, 배우는 중이에요.</p>
               </div>
               <div class="skills">
                 <div class="skills-img">
@@ -147,7 +147,8 @@
             <div class="line"></div>
             <div class="right-down">
               <div class="title-text">
-                <h3>Graphic & Other Skills.</h3>
+                <h3>Other Skills.</h3>
+                <p>기타 다룰 수 있는 프로그램들 이에요.</p>
               </div> 
               <div class="otherskills">
                 <div class="eachSkills">
@@ -195,7 +196,64 @@
         <h3>Portfolio.</h3>
         <p>이런 것들을 즐겁게 뚝딱거렸어요!</p>
       </div>
-      <div class="pf-center">
+      <div class="slide_sec">
+        <div id="horizontal">
+          <section class="active">
+            <div class="imgslide">
+              <img src="/portfolio_GY/img/pf_01.jpg" alt="">
+            </div>
+            <div class="pf-txtbox">
+              <b>My Schedule</b>
+              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
+              <span class="first">프로젝트 인원 | 1인</span>
+              <span>작업 기간 | 2주</span>
+              <button id="openModal">DETAIL</button>
+              <a href="#">WEB SITE</a>
+            </div>
+          </section>
+          <section class="active">
+            <div class="imgslide">
+              <img src="/portfolio_GY/img/pf_02.jpg" alt="">
+            </div>
+            <div class="pf-txtbox">
+              <b>My Schedule</b>
+              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
+              <span class="first">프로젝트 인원 | 1인</span>
+              <span>작업 기간 | 2주</span>
+              <button id="openModal">DETAIL</button>
+              <a href="#">WEB SITE</a>
+            </div>
+          </section>
+          <section class="active">
+            <div class="imgslide">
+              <img src="/portfolio_GY/img/pf_03.jpg" alt="">
+            </div>
+            <div class="pf-txtbox">
+              <b>My Schedule</b>
+              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
+              <span class="first">프로젝트 인원 | 1인</span>
+              <span>작업 기간 | 2주</span>
+              <button id="openModal">DETAIL</button>
+              <a href="#">WEB SITE</a>
+            </div>
+          </section>
+          <section class="active">
+            <div class="imgslide">
+              <img src="/portfolio_GY/img/pf_04.jpg" alt="">
+            </div>
+            <div class="pf-txtbox">
+              <b>My Schedule</b>
+              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
+              <span class="first">프로젝트 인원 | 1인</span>
+              <span>작업 기간 | 2주</span>
+              <button id="openModal">DETAIL</button>
+              <a href="#">WEB SITE</a>
+            </div>
+          </section>
+        </div>
+      </div>
+      
+      <!-- <div class="pf-center">
         <div class="pf-box">
           <div class="each-pf-box">
             <div class="pf-imgbox">
@@ -262,7 +320,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div id="pf-Modal" class="modal1">
         <div class="modal-box">
           <div class="modal-con">
@@ -332,9 +390,9 @@
               <div class="overlay"></div>
             </div>
             <div class="design-txtbox">
-              <b>App Prototype Design</b>
-              <p>앱 프로토타입 디자인</p>
-              <a href="https://velog.io/@gyeojin_1/PORTFOLIOGo-Camp">DETAIL</a>
+              <b>aaaaa</b>
+              <p>어쩌구저쩌구 설명</p>
+              <a href="#">DETAIL</a>
             </div>
           </div>
           <div class="design-eachbox">
@@ -343,9 +401,20 @@
               <div class="overlay"></div>
             </div>
             <div class="design-txtbox">
-              <b>Detail Page</b>
-              <p>실무에서 활용한 인트로+배너 디자인</p>
-              <a href="https://velog.io/@gyeojin_1/PORTFOLIO디자인-작업">DETAIL</a>
+              <b>aaaaa</b>
+              <p>어쩌구저쩌구 설명</p>
+              <a href="#">DETAIL</a>
+            </div>
+          </div>
+          <div class="design-eachbox">
+            <div class="design-img">
+              <img src="/portfolio_GY/img/design_04.jpg" alt="">
+              <div class="overlay"></div>
+            </div>
+            <div class="design-txtbox">
+              <b>aaaaa</b>
+              <p>어쩌구저쩌구 설명</p>
+              <a href="#">DETAIL</a>
             </div>
           </div>
         </div>

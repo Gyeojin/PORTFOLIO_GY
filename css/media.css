@@ -5,8 +5,13 @@
 
 
 @media screen and (max-width: 1280px) {
+  .center {padding: 0 50px;}
   .intro>.center {max-width: 1000px;}
   header>.center {max-width: 1000px;}
+  .pf-box .each-pf-box {position: relative;}
+  .each-pf-box .pf-imgbox {width: 100%; float: none;}
+  .each-pf-box .pf-imgbox .pfimg img {height: 100%; right: 0;}
+  .each-pf-box .pf-txtbox {transform: translate(0, 0); float: none; position: absolute; bottom: 0; padding: 30px; width: 40%; height: auto; background: rgba(255,255,255,0.7);}
 }
 
 @media screen and (max-width: 1040px) {
@@ -21,17 +26,33 @@
   .right-top {width: 50%; padding-right: 40px; border-right: 1px solid;}
   .right-down {width: 50%; padding-left: 40px;}
   .otherskills {display: flex; justify-content: flex-start;}
-  .otherskills .eachSkills {width: 30%; padding-right: 10px;}
-  .otherskills .skills-img {width: 50%;}
+  .otherskills .eachSkills {width: 30%;}
   .otherskills .skills-text{width: 100%;}
   .intro .text h2 {font-size: 10vw;}
   .intro>.center {padding-left: 40px;}
   header>.center {padding: 0 40px;}
   header .logo {width: 80px;}
   header .nav {width: 60%;}
+
+  .design-eachbox {width: calc(50% - 20px);}
+  .design-img {height: 350px;}
+
+  
+  #recieved .msg-table li span:nth-child(1){width: 25%;}
+  #recieved .msg-table li span:nth-child(2){display: none;}
+  #recieved .msg-table li span:nth-child(3){width: 50%;}
+  #recieved .msg-table li span:nth-child(4){width: 25%;}
+
+}
+
+@media screen and (max-width: 850px) {
+  .aboutme-left {padding: 0 30px 30px 30px;}
+  .otherskills .bar {width: 80px;}
 }
 
 @media screen and (max-width: 750px) {
+  .title-text h3 {font-size: 26px;}
+  .desc p {font-size: 15px;}
   .intro .text {top: 40%;}
   .intro .intro-img {width: 250px;}
   header .nav {display: block; position: absolute; right: -50%; top: 100%; width: 100%; z-index: 1;}
@@ -41,17 +62,47 @@
   .intro .text b {font-size: 4vw;}
   .intro .infinity-img .line {height: 400%;}
 
+  .aboutme-left {display: block;}
+  .left-top {width: 100%; padding: 30px 0; border-bottom: 1px solid;}
+  .left-down {width: 100%; padding: 30px 0; border-bottom: 1px solid; border-left: 0;}
+  .aboutme-right {display: block; padding-top: 0; border-top: 0; padding: 0 30px;}
+  .right-top {width: 100%; border-right: 0; padding:0 30px 30px 0; border-bottom: 1px solid;}
+  .aboutme-right .skills {justify-content: center;}
+  .aboutme-right .skills .skills-text p {font-size: 16px;}
+  .otherskills .skills-text p {font-size: 16px;}
+  .right-down {width: 100%; padding-left: 0; padding: 30px 0 30px 0;}
+  .otherskills .bar {width: 100%;}
+
+  .design-img {height: 250px;}
+
+  #recieved .msg-table li span:nth-child(1){width: 25%;}
+  #recieved .msg-table li span:nth-child(3){width: 75%;}
+  #recieved .msg-table li span:nth-child(4){display: none;}
+  #recieved .msg-table .msg-con span:nth-child(3) {padding-left: 15px;}
 }
 
 @media screen and (max-width: 500px) {
   .intro .text {top: 30%;}
-  .intro .text h2 {font-size: 40px;}
   .intro .text b {font-size: 20px;}
   .intro .intro-img {left: 10%; transform: translateX(0);}
   .intro .infinity-img .line {height: 500%;}
   .intro .infinity-img {width:80px; height: 80px;}
   header .logo {width: 60px;}
   header .menu-icon {font-size: 22px;}
+  .desc p {font-size: 14px;}
+
+  .design-eachbox {width: 100%;}
+  .design-txtbox b {font-size: 20px;}
+  .design-txtbox p {font-size: 14px;}
+  .design-txtbox a {padding: 5px 10px;}
+
+  #recieved .msg-table li span:nth-child(1){width: 40%;}
+  #recieved .msg-table li span:nth-child(3){width: 60%;}
+  #recieved .msg-table li span:nth-child(4){display: none;}
+  #recieved .msg-table .msg-con span:nth-child(3) {text-align: center;}
 }
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 450px) {
+  .aboutme-left {padding: 0;}
+  .aboutme-right {padding: 0;}
+}

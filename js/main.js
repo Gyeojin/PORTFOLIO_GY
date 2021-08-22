@@ -4,10 +4,9 @@ function fixNav() {
   const aboutLeft = document.querySelector('.aboutme-left');
   const aboutRight = document.querySelector('.aboutme-right');
   const pf = document.querySelector('.pf');
-  const ds = document.querySelector('.design .title-text');
-  const dsEach = document.querySelectorAll('.design-eachbox');
+  const dsBox = document.querySelector('.design');
   const contact = document.querySelector('#contact');
-  const Arr = ['sub-fade-in','third-fade-in','four-fade-in'];
+  //const Arr = ['sub-fade-in','third-fade-in','four-fade-in'];
 
 
   //console.log(aboutBar);
@@ -52,17 +51,7 @@ function fixNav() {
   }
   
   if (nav1 >= 1929) {
-    ds.classList.add('fade-in');
-  } else {
-    return;
-  }
-
-  if (nav1 >= 2140) {
-    for(let i=0; i<dsEach.length; i++){
-      dsEach[0].classList.add(Arr[0]);
-      dsEach[1].classList.add(Arr[1]);
-      dsEach[2].classList.add(Arr[2]);
-    }
+    dsBox.classList.add('fade-in');
   } else {
     return;
   }
@@ -140,18 +129,54 @@ navButton[4].onclick = function(){
 
 // Portfolio Total Code-----------------------------------//
 //MouseWheel Code
-const mouseWheel = document.querySelector('.pf-box');
-const pfBox = document.querySelector('.each-pf-box');
-var pfWidth = pfBox.offsetWidth;
+// jQuery Next or First / Prev or Last plugin
 
-mouseWheel.addEventListener('wheel', function(e) {
-    const race = pfWidth; // How many pixels to scroll
-    if (e.deltaY > 0) // Scroll right
-        mouseWheel.scrollLeft += race;
-    else // Scroll left
-        mouseWheel.scrollLeft -= race;
-		e.preventDefault();
+$.fn.nextOrFirst = function(selector){
+  var next = this.next(selector);
+  return (next.length) ? next : this.prevAll(selector).last();
+};
+
+$.fn.prevOrLast = function(selector){
+  var prev = this.prev(selector);
+  return (prev.length) ? prev : this.nextAll(selector).last();
+};
+
+// Scroll Functions
+
+function scrollSection(parent, dir) {
+  var active = "active",
+    section = parent.find("."+active);
+  if (dir == "prev") {
+    $(".horizontal section").animate({left:-100 * n + "%"}, 500); 
+    //section.removeClass(active).prevOrLast().addClass(active);
+  } else {
+    $(".horizontal section").animate({left:100 * n + "%"}, 500); 
+  }
+}
+
+// Bind Scroll function to mouse wheel event
+
+$('#horizontal').on('mousewheel wheel', function(e){
+if (e.originalEvent.wheelDelta /120 > 0) { // scroll up event
+  scrollSection($(this), "prev");
+} else { // scroll down event
+  scrollSection($(this));
+}
 });
+
+
+// const mouseWheel = document.querySelector('.pf-box');
+// const pfBox = document.querySelector('.each-pf-box');
+// var pfWidth = pfBox.offsetWidth;
+
+// mouseWheel.addEventListener('wheel', function(e) {
+//     const race = pfWidth; // How many pixels to scroll
+//     if (e.deltaY > 0) // Scroll right
+//         mouseWheel.scrollLeft += race;
+//     else // Scroll left
+//         mouseWheel.scrollLeft -= race;
+// 		e.preventDefault();
+// });
 
 //Modal Code
 const openModal = document.querySelectorAll('#openModal');
