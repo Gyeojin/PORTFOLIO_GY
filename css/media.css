@@ -8,10 +8,10 @@
   .center {padding: 0 50px;}
   .intro>.center {max-width: 1000px;}
   header>.center {max-width: 1000px;}
-  .pf-box .each-pf-box {position: relative;}
-  .each-pf-box .pf-imgbox {width: 100%; float: none;}
-  .each-pf-box .pf-imgbox .pfimg img {height: 100%; right: 0;}
-  .each-pf-box .pf-txtbox {transform: translate(0, 0); float: none; position: absolute; bottom: 0; padding: 30px; width: 40%; height: auto; background: rgba(255,255,255,0.7);}
+  /* .pf-box .each-pf-box {position: relative;} */
+  /* .each-pf-box .pf-imgbox {width: 100%; float: none;} */
+  /* .each-pf-box .pf-imgbox .pfimg img {height: 100%; right: 0;} */
+  /* .each-pf-box .pf-txtbox {transform: translate(0, 0); float: none; position: absolute; bottom: 0; padding: 30px; width: 40%; height: auto; background: rgba(255,255,255,0.7);} */
 }
 
 @media screen and (max-width: 1040px) {

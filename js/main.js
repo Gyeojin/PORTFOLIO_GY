@@ -126,61 +126,10 @@ navButton[4].onclick = function(){
 }
 //-----------------------------------------------------------//
 
-
 // Portfolio Total Code-----------------------------------//
-//MouseWheel Code
-// jQuery Next or First / Prev or Last plugin
-
-$.fn.nextOrFirst = function(selector){
-  var next = this.next(selector);
-  return (next.length) ? next : this.prevAll(selector).last();
-};
-
-$.fn.prevOrLast = function(selector){
-  var prev = this.prev(selector);
-  return (prev.length) ? prev : this.nextAll(selector).last();
-};
-
-// Scroll Functions
-
-function scrollSection(parent, dir) {
-  var active = "active",
-    section = parent.find("."+active);
-  if (dir == "prev") {
-    $(".horizontal section").animate({left:-100 * n + "%"}, 500); 
-    //section.removeClass(active).prevOrLast().addClass(active);
-  } else {
-    $(".horizontal section").animate({left:100 * n + "%"}, 500); 
-  }
-}
-
-// Bind Scroll function to mouse wheel event
-
-$('#horizontal').on('mousewheel wheel', function(e){
-if (e.originalEvent.wheelDelta /120 > 0) { // scroll up event
-  scrollSection($(this), "prev");
-} else { // scroll down event
-  scrollSection($(this));
-}
-});
-
-
-// const mouseWheel = document.querySelector('.pf-box');
-// const pfBox = document.querySelector('.each-pf-box');
-// var pfWidth = pfBox.offsetWidth;
-
-// mouseWheel.addEventListener('wheel', function(e) {
-//     const race = pfWidth; // How many pixels to scroll
-//     if (e.deltaY > 0) // Scroll right
-//         mouseWheel.scrollLeft += race;
-//     else // Scroll left
-//         mouseWheel.scrollLeft -= race;
-// 		e.preventDefault();
-// });
-
 //Modal Code
 const openModal = document.querySelectorAll('#openModal');
-const Modal = document.querySelectorAll('#pf-Modal');
+const Modal = document.querySelectorAll('#pfModal');
 
 for(let i=0; i < openModal.length; i++){
   openModal[i].onclick = function(){

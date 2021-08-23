@@ -12,13 +12,45 @@
   <!-- Font Awesome Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="/portfolio_GY/css/lightslider.css">
+
   <!-- RESET, MAIN Style CSS code -->
   <link rel="stylesheet" href="/portfolio_GY/css/reset.css">
-  <link rel="stylesheet" href="/portfolio_GY/css/main.css">
+  <link rel="stylesheet" href="/portfolio_GY/css/main.css?ver=1">
+  <link rel="stylesheet" href="/portfolio_GY/css/inspector-stylesheet.css">
   <link rel="stylesheet" href="/portfolio_GY/css/media.css">
+  <link rel="stylesheet" href="/portfolio_GY/css/animation.css">
     
 </head>
 <body>
+  <div id="pfModal" class="modal1">
+    <div class="modal-box">
+      <div class="modal-con">
+        <img src="/portfolio_GY/img/pf-content.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="pfModal" class="modal2">
+    <div class="modal-box">
+      <div class="modal-con">
+        <img src="/portfolio_GY/img/pf-content_APIcamp.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="pfModal" class="modal3">
+    <div class="modal-box">
+      <div class="modal-con">
+        <img src="/portfolio_GY/img/pf-content_zay.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="pfModal" class="modal4">
+    <div class="modal-box">
+      <div class="modal-con">
+        <img src="/portfolio_GY/img/pf-content.jpg" alt="">
+      </div>
+    </div>
+  </div>
   <div class="wrap">
     <section class="home">
       <div class="intro">
@@ -37,6 +69,7 @@
           </div>
         </div>
       </div>
+      
       <header>
         <div class="overlay1">
           <img src="/portfolio_GY/img/mobile_nav_bg2.png" alt="">
@@ -196,175 +229,66 @@
         <h3>Portfolio.</h3>
         <p>이런 것들을 즐겁게 뚝딱거렸어요!</p>
       </div>
-      <div class="slide_sec">
-        <div id="horizontal">
-          <section class="active">
-            <div class="imgslide">
-              <img src="/portfolio_GY/img/pf_01.jpg" alt="">
-            </div>
-            <div class="pf-txtbox">
-              <b>My Schedule</b>
-              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
-              <span class="first">프로젝트 인원 | 1인</span>
-              <span>작업 기간 | 2주</span>
-              <button id="openModal">DETAIL</button>
-              <a href="#">WEB SITE</a>
-            </div>
-          </section>
-          <section class="active">
-            <div class="imgslide">
-              <img src="/portfolio_GY/img/pf_02.jpg" alt="">
-            </div>
-            <div class="pf-txtbox">
-              <b>My Schedule</b>
-              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
-              <span class="first">프로젝트 인원 | 1인</span>
-              <span>작업 기간 | 2주</span>
-              <button id="openModal">DETAIL</button>
-              <a href="#">WEB SITE</a>
-            </div>
-          </section>
-          <section class="active">
-            <div class="imgslide">
-              <img src="/portfolio_GY/img/pf_03.jpg" alt="">
-            </div>
-            <div class="pf-txtbox">
-              <b>My Schedule</b>
-              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
-              <span class="first">프로젝트 인원 | 1인</span>
-              <span>작업 기간 | 2주</span>
-              <button id="openModal">DETAIL</button>
-              <a href="#">WEB SITE</a>
-            </div>
-          </section>
-          <section class="active">
-            <div class="imgslide">
-              <img src="/portfolio_GY/img/pf_04.jpg" alt="">
-            </div>
-            <div class="pf-txtbox">
-              <b>My Schedule</b>
-              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
-              <span class="first">프로젝트 인원 | 1인</span>
-              <span>작업 기간 | 2주</span>
-              <button id="openModal">DETAIL</button>
-              <a href="#">WEB SITE</a>
-            </div>
-          </section>
-        </div>
-      </div>
+      <ul id="lightSlider" class="customslide">
+        <li class="each-slidebox">
+          <div class="imgbox">
+            <img src="/portfolio_GY/img/pf_01.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <div class="txtbox">
+            <h3>My Schedule</h3>
+            <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
+            <span class="first">프로젝트 인원 | 1인</span>
+            <span>작업 기간 | 2주</span>
+            <button id="openModal">DETAIL</button>
+            <a href="http://gyeoj93.dothome.co.kr/schedule/pages/sp_auth.php">WEB SITE</a>
+          </div>
+        </li>
+        <li class="each-slidebox">
+          <div class="imgbox">
+            <img src="/portfolio_GY/img/pf_02.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <div class="txtbox">
+            <h3>API-Go Camp!</h3>
+            <p>공공 API 데이터를 활용한 캠핑 앱 프로토타입<br>현재 위치 기반 캠핑업체 검색</p>
+            <span class="first">프로젝트 인원 | 1인</span>
+            <span>작업 기간 | 2주</span>
+            <button id="openModal">DETAIL</button>
+            <a href="https://dabipyeung.com/APIProject/yeojin/APIcamp/">WEB SITE</a>
+          </div>
+        </li>
+        <li class="each-slidebox">
+          <div class="imgbox">
+            <img src="/portfolio_GY/img/pf_03.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <div class="txtbox">
+            <h3>PHP - Zay</h3>
+            <p>PHP 기반 인터넷 쇼핑몰<br>회원가입/로그인/상세페이지 코멘트 등 구현</p>
+            <span class="first">프로젝트 인원 | 1인</span>
+            <span>작업 기간 | 2주</span>
+            <button id="openModal">DETAIL</button>
+            <a href="http://gyeoj93.dothome.co.kr/zay/">WEB SITE</a>
+          </div>
+        </li>
+        <li class="each-slidebox">
+          <div class="imgbox">
+            <img src="/portfolio_GY/img/pf_04.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <div class="txtbox">
+            <h3>MAMMOTH COFFEE</h3>
+            <p>FullPage 플러그인을 이용한 클론 코딩<br>메인페이지+반응형 구현</p>
+            <span class="first">프로젝트 인원 | 1인</span>
+            <span>작업 기간 | 1주</span>
+            <button id="openModal">DETAIL</button>
+            <a href="http://gyeoj93.dothome.co.kr/Renewal_Mammoth/">WEB SITE</a>
+          </div>
+        </li>
+      </ul>
+
       
-      <!-- <div class="pf-center">
-        <div class="pf-box">
-          <div class="each-pf-box">
-            <div class="pf-imgbox">
-              <div class="pfimg">
-                <img src="../portfolio_GY/img/pf_01.jpg" alt="">
-                <div class="overlay"></div>
-              </div>
-            </div>
-            <div class="pf-txtbox">
-              <b>My Schedule</b>
-              <p>스케줄을 업데이트 할 수 있는 홈페이지.<br>글쓰기 수정·삭제 / 차트 값 반영 구현.</p>
-              <span class="first">프로젝트 인원 | 1인</span>
-              <span>작업 기간 | 2주</span>
-              <button id="openModal">DETAIL</button>
-              <a href="#">WEB SITE</a>
-            </div>
-          </div>
-          <div class="each-pf-box">
-            <div class="pf-imgbox">
-              <div class="pfimg">
-                <img src="/portfolio_GY/img/pf_02.jpg" alt="">
-                <div class="overlay"></div>
-              </div>
-            </div>
-            <div class="pf-txtbox">
-              <b>API-Go Camp!</b>
-              <p>공공 API 데이터를 활용한 캠핑 앱 프로토타입<br>현재 위치 기반 캠핑업체 검색</p>
-              <span class="first">프로젝트 인원 | 1인</span>
-              <span>작업 기간 | 2주</span>
-              <button id="openModal">DETAIL</button>
-              <a href="#">WEB SITE</a>
-            </div>
-          </div>
-          <div class="each-pf-box">
-            <div class="pf-imgbox">
-              <div class="pfimg">
-                <img src="/portfolio_GY/img/pf_03.jpg" alt="">
-                <div class="overlay"></div>
-              </div>
-            </div>
-            <div class="pf-txtbox">
-              <b>PHP - Zay</b>
-              <p>PHP 기반 인터넷 쇼핑몰<br>회원가입/로그인/상세페이지 코멘트 등 구현</p>
-              <span class="first">프로젝트 인원 | 1인</span>
-              <span>작업 기간 | 2주</span>
-              <button id="openModal">DETAIL</button>
-              <a href="#">WEB SITE</a>
-            </div>
-          </div>
-          <div class="each-pf-box">
-            <div class="pf-imgbox">
-              <div class="pfimg">
-                <img src="../portfolio_GY/img/pf_04.jpg" alt="">
-                <div class="overlay"></div>
-              </div>
-            </div>
-            <div class="pf-txtbox">
-              <b>MAMMOTH COFFEE</b>
-              <p>FullPage 플러그인을 이용한 클론 코딩<br>메인페이지+반응형 구현</p>
-              <span class="first">프로젝트 인원 | 1인</span>
-              <span>작업 기간 | 1주</span>
-              <button id="openModal">DETAIL</button>
-              <a href="#">WEB SITE</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div id="pf-Modal" class="modal1">
-        <div class="modal-box">
-          <div class="modal-con">
-            <img src="/portfolio_GY/img/pf-content.jpg" alt="">
-            <div class="close" id="close">
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="pf-Modal" class="modal2">
-        <div class="modal-box">
-          <div class="modal-con">
-            <img src="/portfolio_GY/img/pf-content_APIcamp.jpg" alt="">
-            <div class="close" id="close">
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="pf-Modal" class="modal3">
-        <div class="modal-box">
-          <div class="modal-con">
-            <img src="/portfolio_GY/img/pf-content_zay.jpg" alt="">
-            <div class="close" id="close">
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="pf-Modal" class="modal4">
-        <div class="modal-box">
-          <div class="modal-con">
-            <img src="/portfolio_GY/img/pf-content.jpg" alt="">
-            <div class="close" id="close">
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <section class="design">
       <div class="center">
@@ -390,9 +314,9 @@
               <div class="overlay"></div>
             </div>
             <div class="design-txtbox">
-              <b>aaaaa</b>
+              <b>App Design (Prototype)</b>
               <p>어쩌구저쩌구 설명</p>
-              <a href="#">DETAIL</a>
+              <a href="https://velog.io/@gyeojin_1/PORTFOLIOGo-Camp">DETAIL</a>
             </div>
           </div>
           <div class="design-eachbox">
@@ -401,9 +325,9 @@
               <div class="overlay"></div>
             </div>
             <div class="design-txtbox">
-              <b>aaaaa</b>
-              <p>어쩌구저쩌구 설명</p>
-              <a href="#">DETAIL</a>
+              <b>Intro Page Design</b>
+              <p>실무에서 사용한 상세페이지 인트로 디자인 모음입니다.</p>
+              <a href="https://velog.io/@gyeojin_1/PORTFOLIO%EB%94%94%EC%9E%90%EC%9D%B8-%EC%9E%91%EC%97%85">DETAIL</a>
             </div>
           </div>
           <div class="design-eachbox">
@@ -491,8 +415,7 @@
 
   <!-- Main JS link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-  <script type='text/javascript' src='../portfolio_GY/lib/jquery.mousewheel.min.js'></script> -->
+  <script src="/portfolio_GY/js/lightslider.js"></script>
   <script src="/portfolio_GY/js/main.js"></script>
   <script src="/portfolio_GY/js/jq.js"></script>
   <script>
@@ -528,6 +451,24 @@
     });
 
   </script>
-
+  <script>
+    $(function(){
+      //Light Slider Function Code
+      const slider = function(){
+        $("#lightSlider").lightSlider({
+          item: 1,
+          controls: true,
+          // prevHtml: '<i class="fa fa-angle-left"></i>',
+          // nextHtml: '<i class="fa fa-angle-right"></i>',
+          speed: 600, //ms'
+          auto: false,
+          loop: true,
+          pause: 4000,
+          easing: 'linear'
+        });
+      }
+      slider();
+    });
+  </script>
 </body>
 </html>
