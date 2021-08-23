@@ -34,6 +34,9 @@
   header .logo {width: 80px;}
   header .nav {width: 60%;}
 
+  .each-slidebox .imgbox {height: 100%; width: auto;}
+  .each-slidebox .imgbox img {height: 100%; width: auto;}
+
   .design-eachbox {width: calc(50% - 20px);}
   .design-img {height: 350px;}
 
@@ -48,6 +51,10 @@
 @media screen and (max-width: 850px) {
   .aboutme-left {padding: 0 30px 30px 30px;}
   .otherskills .bar {width: 80px;}
+  .each-slidebox .txtbox {padding: 20px 30px;}
+  .each-slidebox .txtbox h3 {font-size: 24px;}
+  .each-slidebox .txtbox p {font-size: 14px;}
+  .each-slidebox .txtbox button, .each-slidebox .txtbox a{padding: 10px 15px;}
 }
 
 @media screen and (max-width: 750px) {
@@ -65,8 +72,9 @@
   .aboutme-left {display: block;}
   .left-top {width: 100%; padding: 30px 0; border-bottom: 1px solid;}
   .left-down {width: 100%; padding: 30px 0; border-bottom: 1px solid; border-left: 0;}
+  .aboutme-left .viewmore {padding: 10px 15px;}
   .aboutme-right {display: block; padding-top: 0; border-top: 0; padding: 0 30px;}
-  .right-top {width: 100%; border-right: 0; padding:0 30px 30px 0; border-bottom: 1px solid;}
+  .right-top {width: 100%; border-right: 0; padding:30px 0; border-bottom: 1px solid;}
   .aboutme-right .skills {justify-content: center;}
   .aboutme-right .skills .skills-text p {font-size: 16px;}
   .otherskills .skills-text p {font-size: 16px;}
@@ -82,6 +90,7 @@
 }
 
 @media screen and (max-width: 500px) {
+  header>.center {padding: 0 20px;}
   .intro .text {top: 30%;}
   .intro .text b {font-size: 20px;}
   .intro .intro-img {left: 10%; transform: translateX(0);}
@@ -90,6 +99,10 @@
   header .logo {width: 60px;}
   header .menu-icon {font-size: 22px;}
   .desc p {font-size: 14px;}
+
+  .aboutme-left .viewmore {text-align: center; width: 100%;}
+
+  .each-slidebox .txtbox h3{font-size: 20px;}
 
   .design-eachbox {width: 100%;}
   .design-txtbox b {font-size: 20px;}
@@ -103,6 +116,14 @@
 }
 
 @media screen and (max-width: 450px) {
+  .center {padding: 0 20px;}
   .aboutme-left {padding: 0;}
   .aboutme-right {padding: 0;}
+  .design-txtbox b {font-size: 18px; padding-bottom: 20px;}
+  .design-txtbox p {display: none;}
+  #contact .title-text h3 {font-size: 32px;}
+  .title-text p{font-size: 14px;}
+  #contact .form-area .name-email input {font-size: 12px;}
+  #contact .form-area .subject input {font-size: 12px;}
+  #contact .form-area .message textarea {font-size: 12px;}
 }
