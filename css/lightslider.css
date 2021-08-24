@@ -166,15 +166,22 @@
     transition: opacity 0.35s linear 0s;
 }
 .lSAction > a:hover {
+    color: #C6DFD6;
     opacity: 1;
 }
+
+.lSAction i {font-size: 30px;}
+
 .lSAction > .lSPrev {
     background-position: 0 0;
-    left: 10px;
+    display: flex; justify-content: center; align-items: center;
+    left: 50px;
 }
+
 .lSAction > .lSNext {
     background-position: -32px 0;
-    right: 10px;
+    display: flex; justify-content: center; align-items: center;
+    right: 50px;
 }
 .lSAction > a.disabled {
     pointer-events: none;

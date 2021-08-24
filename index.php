@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,15 @@
   <title>GY PORTFOLIO</title>
 
   <!-- Google Font Style Conde -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+
   <!-- Font Awesome Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="/portfolio_GY/css/lightslider.css">
+  <link rel="stylesheet" href="/portfolio_GY/lib/animate.css">
 
   <!-- RESET, MAIN Style CSS code -->
   <link rel="stylesheet" href="/portfolio_GY/css/reset.css">
@@ -20,9 +24,22 @@
   <link rel="stylesheet" href="/portfolio_GY/css/inspector-stylesheet.css">
   <link rel="stylesheet" href="/portfolio_GY/css/media.css">
   <link rel="stylesheet" href="/portfolio_GY/css/animation.css">
-    
+
 </head>
+
 <body>
+  <!-- landing Page Code -->
+  <div id="landing" class="start">
+    <div class="landing_logo">
+      <img src="/portfolio_GY/img/portfolio_logo.png" alt="">
+    </div>
+    <div class="landing_text">
+      <h2 class="typing"></h2>
+      <b>환영합니다!</b>
+    </div>
+  </div>
+  <!-- end of landing Page Code -->
+  <!-- Portfolio Modal Page Code -->
   <div id="pfModal" class="modal1">
     <div class="modal-box">
       <div class="modal-con">
@@ -51,6 +68,8 @@
       </div>
     </div>
   </div>
+  <!-- End of Portfolio Modal Page Code -->
+
   <div class="wrap">
     <section class="home">
       <div class="intro">
@@ -69,7 +88,6 @@
           </div>
         </div>
       </div>
-      
       <header>
         <div class="overlay1">
           <img src="/portfolio_GY/img/mobile_nav_bg2.png" alt="">
@@ -182,7 +200,7 @@
               <div class="title-text">
                 <h3>Other Skills.</h3>
                 <p>기타 다룰 수 있는 프로그램들 이에요.</p>
-              </div> 
+              </div>
               <div class="otherskills">
                 <div class="eachSkills">
                   <div class="skills-img">
@@ -202,7 +220,7 @@
                   <div class="skills-text">
                     <p>Illustrator</p>
                     <div class="bar">
-                    <b>95%</b>
+                      <b>95%</b>
                     </div>
                   </div>
                 </div>
@@ -219,7 +237,7 @@
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </section>
@@ -233,7 +251,10 @@
         <li class="each-slidebox">
           <div class="imgbox">
             <img src="/portfolio_GY/img/pf_01.jpg" alt="">
-            <div class="overlay"></div>
+            <div class="overlay">
+              <a href="http://gyeoj93.dothome.co.kr/schedule/pages/sp_auth.php" target="_blank" class="access"><img
+                  src="/portfolio_GY/img/access.png" alt=""></a>
+            </div>
           </div>
           <div class="txtbox">
             <h3>My Schedule</h3>
@@ -241,13 +262,16 @@
             <span class="first">프로젝트 인원 | 1인</span>
             <span>작업 기간 | 2주</span>
             <button id="openModal">DETAIL</button>
-            <a href="http://gyeoj93.dothome.co.kr/schedule/pages/sp_auth.php">WEB SITE</a>
+            <a href="#" target="_blank">GIT HUB</a>
           </div>
         </li>
         <li class="each-slidebox">
           <div class="imgbox">
             <img src="/portfolio_GY/img/pf_02.jpg" alt="">
-            <div class="overlay"></div>
+            <div class="overlay">
+              <a href="https://dabipyeung.com/APIProject/yeojin/APIcamp/" target="_blank" class="access"><img
+                  src="/portfolio_GY/img/access.png" alt=""></a>
+            </div>
           </div>
           <div class="txtbox">
             <h3>API-Go Camp!</h3>
@@ -255,13 +279,16 @@
             <span class="first">프로젝트 인원 | 1인</span>
             <span>작업 기간 | 2주</span>
             <button id="openModal">DETAIL</button>
-            <a href="https://dabipyeung.com/APIProject/yeojin/APIcamp/">WEB SITE</a>
+            <a href="#" target="_blank">GIT HUB</a>
           </div>
         </li>
         <li class="each-slidebox">
           <div class="imgbox">
             <img src="/portfolio_GY/img/pf_03.jpg" alt="">
-            <div class="overlay"></div>
+            <div class="overlay">
+              <a href="http://gyeoj93.dothome.co.kr/zay/" target="_blank" class="access"><img
+                  src="/portfolio_GY/img/access.png" alt=""></a>
+            </div>
           </div>
           <div class="txtbox">
             <h3>PHP - Zay</h3>
@@ -269,13 +296,16 @@
             <span class="first">프로젝트 인원 | 1인</span>
             <span>작업 기간 | 2주</span>
             <button id="openModal">DETAIL</button>
-            <a href="http://gyeoj93.dothome.co.kr/zay/">WEB SITE</a>
+            <a href="#" target="_blank">GIT HUB</a>
           </div>
         </li>
         <li class="each-slidebox">
           <div class="imgbox">
             <img src="/portfolio_GY/img/pf_04.jpg" alt="">
-            <div class="overlay"></div>
+            <div class="overlay">
+              <a href="http://gyeoj93.dothome.co.kr/Renewal_Mammoth/" target="_blank" class="access"><img
+                  src="/portfolio_GY/img/access.png" alt=""></a>
+            </div>
           </div>
           <div class="txtbox">
             <h3>MAMMOTH COFFEE</h3>
@@ -283,12 +313,12 @@
             <span class="first">프로젝트 인원 | 1인</span>
             <span>작업 기간 | 1주</span>
             <button id="openModal">DETAIL</button>
-            <a href="http://gyeoj93.dothome.co.kr/Renewal_Mammoth/">WEB SITE</a>
+            <a href="#" target="_blank">GIT HUB</a>
           </div>
         </li>
       </ul>
 
-      
+
     </section>
     <section class="design">
       <div class="center">
@@ -300,45 +330,54 @@
           <div class="design-eachbox">
             <div class="design-img">
               <img src="/portfolio_GY/img/design_01.jpg" alt="">
-              <div class="overlay"></div>
+              <div class="overlay">
+                <a href="" target="_blank" class="access"><img src="/portfolio_GY/img/access.png" alt=""></a>
+              </div>
             </div>
             <div class="design-txtbox">
-              <b>aaaaa</b>
-              <p>어쩌구저쩌구 설명</p>
-              <a href="#">DETAIL</a>
+              <b>Brand Planning</b>
+              <p>가상의 반려동물 완구 브랜드인<br>'FoFo!' 브랜드 기획+디자인</p>
+              <a href="#" target="_blank">DETAIL</a>
             </div>
           </div>
           <div class="design-eachbox">
             <div class="design-img">
               <img src="/portfolio_GY/img/design_02.jpg" alt="">
-              <div class="overlay"></div>
+              <div class="overlay">
+                <a href="" target="_blank" class="access"><img src="/portfolio_GY/img/access.png" alt=""></a>
+              </div>
             </div>
             <div class="design-txtbox">
               <b>App Design (Prototype)</b>
-              <p>어쩌구저쩌구 설명</p>
-              <a href="https://velog.io/@gyeojin_1/PORTFOLIOGo-Camp">DETAIL</a>
+              <p>공공 API 활용 캠핑업체 검색 앱의<br>프로토타입(웹)용 디자인</p>
+              <a href="https://velog.io/@gyeojin_1/PORTFOLIOGo-Camp" target="_blank">DETAIL</a>
             </div>
           </div>
           <div class="design-eachbox">
             <div class="design-img">
               <img src="/portfolio_GY/img/design_03.jpg" alt="">
-              <div class="overlay"></div>
+              <div class="overlay">
+                <a href="" target="_blank" class="access"><img src="/portfolio_GY/img/access.png" alt=""></a>
+              </div>
             </div>
             <div class="design-txtbox">
               <b>Intro Page Design</b>
-              <p>실무에서 사용한 상세페이지 인트로 디자인 모음입니다.</p>
-              <a href="https://velog.io/@gyeojin_1/PORTFOLIO%EB%94%94%EC%9E%90%EC%9D%B8-%EC%9E%91%EC%97%85">DETAIL</a>
+              <p>실무에서 사용한 상세페이지 인트로와<br>배너 디자인 모음</p>
+              <a href="https://velog.io/@gyeojin_1/PORTFOLIO%EB%94%94%EC%9E%90%EC%9D%B8-%EC%9E%91%EC%97%85"
+                target="_blank">DETAIL</a>
             </div>
           </div>
           <div class="design-eachbox">
             <div class="design-img">
               <img src="/portfolio_GY/img/design_04.jpg" alt="">
-              <div class="overlay"></div>
+              <div class="overlay">
+                <a href="" target="_blank" class="access"><img src="/portfolio_GY/img/access.png" alt=""></a>
+              </div>
             </div>
             <div class="design-txtbox">
-              <b>aaaaa</b>
-              <p>어쩌구저쩌구 설명</p>
-              <a href="#">DETAIL</a>
+              <b>Branding Design</b>
+              <p>가상의 비건 도시락 브랜드인 '아삭' 브랜딩 디자인</p>
+              <a href="https://velog.io/@gyeojin_1/PORTFOLIOASACK" target="_blank">DETAIL</a>
             </div>
           </div>
         </div>
@@ -400,75 +439,72 @@
             </p>
             <p class="message">
               <textarea name="pf_desc" placeholder="내용을 입력해 주세요."></textarea>
-              <p class="send-btn">
-                <button type="button">SEND MESSAGE</button>
-              </p>
+            <p class="send-btn">
+              <button type="button">SEND MESSAGE</button>
+            </p>
             </p>
           </form>
         </div>
       </div>
     </section>
   </div>
-
-
-
-
   <!-- Main JS link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="/portfolio_GY/js/lightslider.js"></script>
+  <script src="/portfolio_GY/js/WOW.js"></script>
   <script src="/portfolio_GY/js/main.js"></script>
   <script src="/portfolio_GY/js/jq.js"></script>
   <script>
-    const submitBtn = document.querySelector('.send-btn button');
-    
-    submitBtn.addEventListener('click',function(){
-      if(!document.pf_msg_form.pf_id.value){
-        alert('성함을 입력해 주세요.');
-        document.pf_msg_form.pf_id.focus();
-        return;
-      }
-      if(!document.pf_msg_form.pf_email.value){
-        alert('연락 받으실 이메일을 입력해 주세요.');
-        document.pf_msg_form.pf_email.focus();
-        return;
-      }
-      if(!document.pf_msg_form.pf_pass.value){
-        alert('글 열람 비밀번호를 입력해 주세요.');
-        document.pf_msg_form.pf_pass.focus();
-        return;
-      }
-      if(!document.pf_msg_form.pf_tit.value){
-        alert('글 제목을 입력해 주세요.');
-        document.pf_msg_form.pf_tit.focus();
-        return;
-      }
-      if(!document.pf_msg_form.pf_desc.value){
-        alert('글 내용을 입력해 주세요.');
-        document.pf_msg_form.pf_desc.focus();
-        return;
-      }
-      document.pf_msg_form.submit();
-    });
+  const submitBtn = document.querySelector('.send-btn button');
 
+  submitBtn.addEventListener('click', function() {
+    if (!document.pf_msg_form.pf_id.value) {
+      alert('성함을 입력해 주세요.');
+      document.pf_msg_form.pf_id.focus();
+      return;
+    }
+    if (!document.pf_msg_form.pf_email.value) {
+      alert('연락 받으실 이메일을 입력해 주세요.');
+      document.pf_msg_form.pf_email.focus();
+      return;
+    }
+    if (!document.pf_msg_form.pf_pass.value) {
+      alert('글 열람 비밀번호를 입력해 주세요.');
+      document.pf_msg_form.pf_pass.focus();
+      return;
+    }
+    if (!document.pf_msg_form.pf_tit.value) {
+      alert('글 제목을 입력해 주세요.');
+      document.pf_msg_form.pf_tit.focus();
+      return;
+    }
+    if (!document.pf_msg_form.pf_desc.value) {
+      alert('글 내용을 입력해 주세요.');
+      document.pf_msg_form.pf_desc.focus();
+      return;
+    }
+    document.pf_msg_form.submit();
+  });
   </script>
   <script>
-    $(function(){
-      //Light Slider Function Code
-      const slider = function(){
-        $("#lightSlider").lightSlider({
-          item: 1,
-          controls: true,
-          // prevHtml: '<i class="fa fa-angle-left"></i>',
-          // nextHtml: '<i class="fa fa-angle-right"></i>',
-          speed: 600, //ms'
-          auto: false,
-          loop: true,
-          pause: 4000,
-          easing: 'linear'
-        });
-      }
-      slider();
-    });
+  $(function() {
+    //Light Slider Function Code
+    const slider = function() {
+      $("#lightSlider").lightSlider({
+        item: 1,
+        controls: true,
+        prevHtml: '<i class="fa fa-angle-left"></i>',
+        nextHtml: '<i class="fa fa-angle-right"></i>',
+        speed: 600, //ms'
+        auto: false,
+        loop: true,
+        pause: 4000,
+        easing: 'linear'
+      });
+    }
+    slider();
+  });
   </script>
 </body>
+
 </html>

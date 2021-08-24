@@ -1,3 +1,37 @@
+
+
+/* Landing Animation style Code */
+#landing{position: fixed; width: 100%; height: 100%; background: #fff; z-index: 1001; top: 0; left: 0; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+#landing.start {animation: start 0.5s 1; animation-fill-mode: forwards; animation-delay: 3.8s;}
+ @keyframes start { 
+ 0%{top: 0;}
+ 100%{top: -100%;}
+}
+/* #landing.started {top: -100%;} 쿠키 값(value)이 started 이면 class 붙여주는 용도 */
+
+#landing .landing_logo {width: 100px; height: 100px; position: relative; top: -100px; display: flex; align-items: center; justify-content: center; animation: show-down 1.5s 1; opacity: 0; animation-fill-mode: forwards;}
+@keyframes show-down {
+  0%{opacity: 0;}
+  100%{top: 0; opacity: 1;}
+}
+
+#landing .landing_logo img{width: 100%;}
+#landing .landing_text {width: 200px; height: 40px; overflow: hidden; text-align: center;}
+#landing h2 {color: #333; font-weight: 400; font-size: 16px; margin: 10px 0; animation: show-fadeout 0.7s 1; opacity: 1; animation-fill-mode: forwards; animation-delay: 3s;}
+
+@keyframes show-fadeout {
+  0%{transform: translateY(0); opacity: 1;}
+  100%{transform: translateY(-100px); opacity: 0;}
+}
+
+#landing b{display: flex; color: #333; font-weight: 400; font-size: 16px; animation: show-fadein 1s 1; opacity: 1; animation-fill-mode: forwards; animation-delay: 3s; width: 100%; height: 100%; justify-content: center; align-items: flex-start;}
+
+@keyframes show-fadein {
+  0%{transform: translateY(-); opacity: 0;}
+  100%{transform: translateY(-30px); opacity: 1;}
+}
+
+
 .wrap {width: 100%; height: auto; position: relative;}
 section.home {padding: 0;}
 .intro {width: 100%; height: 100vh; background:#f0f0f0; position: relative;}
@@ -80,23 +114,25 @@ section {width: 100%; height: auto;}
 
 /* Portfolio Section Style Code */
 .pf {position: relative;}
-.pf .bg {background: url(../img/portfolio_bg.png) no-repeat center center; background-size: cover; width: 100%; height: 90%; position: absolute; z-index: -1;}
+.pf .bg {background: url(/portfolio_GY/img/portfolio_bg.png) no-repeat center center; background-size: cover; width: 100%; height: 90%; position: absolute; z-index: -1;}
 .pf-center {width: 100%!important; height: 100%!important; display: flex; justify-content: center; align-items: center; padding-top: 50px;}
 
 .customslide {width: 400%; height: 100%;}
 .each-slidebox {width: 25%; height: 100%; margin-right: 0;}
-.each-slidebox .imgbox {width: 100%; position: relative;}
+.each-slidebox .imgbox {width: 100%; height: 100%; position: relative;}
 .each-slidebox .imgbox img{width: 100%; transition: all 0.6s;}
 .each-slidebox .imgbox:hover img{transform: scale(1.1);}
-.overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); opacity:0; transition: all 0.6s;}
+.each-slidebox .overlay {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; height: 100%; background: rgba(0,0,0,0.3); opacity:0; transition: all 0.6s;}
+.each-slidebox .overlay .access {position: absolute; width: 50px; height: auto; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.each-slidebox .overlay .access img {width: 100%; opacity: 0.5;}
 .each-slidebox .imgbox:hover .overlay {opacity: 1;}
-.each-slidebox .txtbox {position: absolute; bottom: 0; padding:30px 50px; background: rgba(255,255,255,0.7); z-index: 1;}
+.each-slidebox .txtbox {position: absolute; bottom: 0; padding:20px 50px; background: rgba(255,255,255,0.7); z-index: 1;}
 .each-slidebox .txtbox h3{font-size: 30px;}
 .each-slidebox .txtbox p {font-size: 16px; padding: 10px 0;}
 .each-slidebox .txtbox span {font-weight: 300; padding-top: 10px; display: block;}
 .each-slidebox .txtbox .first {margin-top: 10px;}
 .each-slidebox .txtbox button,
-.each-slidebox .txtbox a{padding: 15px 20px; margin-top: 20px; display: inline-block; border: 1px solid #222; margin-right: 10px; transition: all;}
+.each-slidebox .txtbox a{padding: 10px 15px; margin-top: 20px; display: inline-block; border: 1px solid #222; margin-right: 10px; transition: all; cursor: pointer;}
 .each-slidebox .txtbox button:hover,
 .each-slidebox .txtbox a:hover {border: 1px solid #C6DFD6; color: #C6DFD6;} */
 
@@ -111,10 +147,13 @@ section {width: 100%; height: auto;}
 .design-box {width: 100%; height: auto; display: flex; flex-wrap: wrap; justify-content: space-between; padding-top: 40px;}
 .design-eachbox {width: calc(33.33% - 20px); box-shadow: 0px 0px 16px 1px rgba(155,155,155,0.3); margin-bottom: 30px;}
 .design-img {width: 100%; height: 400px; overflow: hidden; position: relative; cursor: pointer;}
+.design-img .overlay {position: relative; width: 100%; height: 100%; background: rgba(0,0,0,0.3); opacity:0; transition: all 0.6s;}
+.design-img .overlay .access {position: absolute; width: 50px; height: auto; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.design-img .overlay .access img {width: 100%; opacity: 0.5;}
 .design-img:hover .overlay {opacity: 1;}
 .design-img img {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .design-txtbox {width: 100%; text-align: center;}
-.design-txtbox b{font-size: 24px; display: block; padding: 10px 0 0 0;}
+.design-txtbox b{font-size: 24px; display: block; padding: 20px 0 0 0;}
 .design-txtbox p{font-size: 16px; padding: 10px 0 20px 0;}
 .design-txtbox a {padding: 10px 20px; display: inline-block; border: 1px solid #222; transition: all; margin-bottom: 20px;}
 .design-txtbox a:hover {border: 1px solid #C6DFD6; color: #C6DFD6;}
