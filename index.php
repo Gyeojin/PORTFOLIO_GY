@@ -317,8 +317,6 @@
           </div>
         </li>
       </ul>
-
-
     </section>
     <section class="design">
       <div class="center">
