@@ -68,6 +68,13 @@
       </div>
     </div>
   </div>
+  <div id="pfModal" class="modal5">
+    <div class="modal-box">
+      <div class="modal-con">
+        <img src="/portfolio_GY/img/pf-content_ciy.jpg" alt="">
+      </div>
+    </div>
+  </div>
   <!-- End of Portfolio Modal Page Code -->
 
   <div class="wrap">
@@ -310,6 +317,23 @@
           <div class="txtbox">
             <h3>MAMMOTH COFFEE</h3>
             <p>FullPage 플러그인을 이용한 클론 코딩<br>메인페이지+반응형 구현</p>
+            <span class="first">프로젝트 인원 | 1인</span>
+            <span>작업 기간 | 1주</span>
+            <button id="openModal">DETAIL</button>
+            <a href="#" target="_blank">GIT HUB</a>
+          </div>
+        </li>
+        <li class="each-slidebox">
+          <div class="imgbox">
+            <img src="/portfolio_GY/img/pf_05.jpg" alt="">
+            <div class="overlay">
+              <a href="https://gyeojin.github.io/react_ciy/" target="_blank" class="access"><img
+                  src="/portfolio_GY/img/access.png" alt=""></a>
+            </div>
+          </div>
+          <div class="txtbox">
+            <h3>React - CIY</h3>
+            <p>React 이용해 구현한<br>요리 레시피 검색 홈페이지</p>
             <span class="first">프로젝트 인원 | 1인</span>
             <span>작업 기간 | 1주</span>
             <button id="openModal">DETAIL</button>
